@@ -145,3 +145,10 @@ label {
   color: white;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
