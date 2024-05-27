@@ -1,0 +1,108 @@
+{
+  "GE": {
+    "ge103": {
+      "courseCode": "GE 103",
+      "courseTitle": "Online University Skills",
+      "equivalent": {
+        "course1": "CAR 101",
+        "course2": "PC 103"
+      },
+      "credit": "1"
+    },
+    "eng101": {
+      "courseCode": "ENG 101",
+      "courseTitle": "Introduction to College Writing",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "eng201": {
+      "courseCode": "ENG 201",
+      "courseTitle": "Intermediate College Writing",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "math107": {
+      "courseCode": "MATH 107",
+      "courseTitle": "Quantitative Analysis and Personal Finance",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "mat252": {
+      "courseCode": "MAT 252",
+      "courseTitle": "Statistics",
+      "equivalent": {
+        "course1": "MATH 221A"
+      },
+      "credit": "3"
+    },
+    "comm122": {
+      "courseCode": "COMM 122",
+      "courseTitle": "Interpersonal Communications",
+      "equivalent": {
+        "course1": "COMM 150",
+        "course2": "COMM 175"
+      },
+      "credit": "3"
+    },
+    "pols110": {
+      "courseCode": "POLS 110",
+      "courseTitle": "American Government",
+      "equivalent": {
+        "course1": "POLSC 110",
+        "course2": "any AI GE"
+      },
+      "credit": "3"
+    },
+    "ls103": {
+      "courseCode": "LS 103",
+      "courseTitle": "Nutrition and Health",
+      "equivalent": {
+        "course1": "NUTR 150",
+        "course2": "LS 303",
+        "course3": "any LS GE"
+      },
+      "credit": "3"
+    },
+    "ps120": {
+      "courseCode": "PS 120",
+      "courseTitle": "Introduction to Physical Geography",
+      "equivalent": {
+        "course1": "GEO 111",
+        "course2": "any PS GE"
+      },
+      "credit": "3"
+    },
+    "econ162": {
+      "courseCode": "ECON 162",
+      "courseTitle": "Economic Principles and Problems",
+      "equivalent": {
+        "course1": "ECON 151",
+        "course2": "any SS GE"
+      },
+      "credit": "3"
+    },
+    "geo10": {
+      "courseCode": "GE0 10",
+      "courseTitle": "GEOGRAPHY",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "econ161": {
+      "courseCode": "ECON 161",
+      "courseTitle": "Microeconomics",
+      "equivalent": {
+        "course1": "ECON 150",
+        "course2": "any SS GE"
+      },
+      "credit": "3"
+    },
+    "art101": {
+      "courseCode": "ART 101",
+      "courseTitle": "Survey of Art History",
+      "equivalent": {
+        "course1": "any FA GE"
+      },
+      "credit": "3"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "c1": {
+    "dm105": {
+      "courseCode": "DM 105",
+      "courseTitle": "Introduction to Digital Marketing",
+      "equivalent": {
+        "course1": "DM 105",
+        "course2": "SMMBC 105"
+      },
+      "credit": "3"
+    },
+
+    "dm120": {
+      "courseCode": "DM 120",
+      "courseTitle": "Digital Marketing Strategy",
+      "equivalent": {
+        "course1": "SMMBC 120"
+      },
+      "credit": "3"
+    },
+
+    "dm150": {
+      "courseCode": "DM 150",
+      "courseTitle": "Digital Marketing Analytics",
+      "equivalent": {
+        "course1": "SMMBC 150"
+      },
+      "credit": "3"
+    },
+
+    "smm130": {
+      "courseCode": "SMM 130",
+      "courseTitle": "Social Media Marketing Content",
+      "equivalent": {
+        "course1": "SMMBC 105"
+      },
+      "credit": "3"
+    },
+
+    "gs170": {
+      "courseCode": "GS 170",
+      "courseTitle": "Career Development",
+      "equivalent": {
+        "course1": "CAR 201P"
+      },
+      "credit": "3"
+    },
+
+    "dm160": {
+      "courseCode": "DM 160",
+      "courseTitle": "Digital Marketing Advertising",
+      "equivalent": {
+        "course1": "SMMBC 160"
+      },
+      "credit": "3"
+    }
+  },
+
+  "c2": {
+    "dcc180": {
+      "courseCode": "DCC 180",
+      "courseTitle": "Fundamentals of Content Creation",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm210": {
+      "courseCode": "COMM 210",
+      "courseTitle": "Mass Communication and Society",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm310": {
+      "courseCode": "COMM 310",
+      "courseTitle": "Writing for Communication Careers",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm320": {
+      "courseCode": "COMM 320",
+      "courseTitle": "Public Speaking",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm330": {
+      "courseCode": "COMM 330",
+      "courseTitle": "Digital Communication",
+      "equivalent": {},
+      "credit": "3"
+    }
+  },
+
+  "c3": {
+    "comm300": {
+      "courseCode": "COMM 300",
+      "courseTitle": "Communication Career Workshop",
+      "equivalent": {},
+      "credit": "1"
+    },
+    "comm350": {
+      "courseCode": "COMM 350",
+      "courseTitle": "Communication Research Methods",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm360": {
+      "courseCode": "COMM 360",
+      "courseTitle": "Conflict Management",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm370": {
+      "courseCode": "COMM 370",
+      "courseTitle": "Media Law and Ethics",
+      "equivalent": {},
+      "credit": "3"
+    },
+    "comm380": {
+      "courseCode": "COMM 380",
+      "courseTitle": "Communication Project Management",
+      "equivalent": {},
+      "credit": "3"
+    }
+  }
+}
