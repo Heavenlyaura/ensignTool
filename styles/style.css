@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #006248;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+nav ul li a:hover {
+  color: #006248;
+  background-color: #fff;
+}
+.main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+}
+.lgrid img {
+  width: 100%;
+  height: 100%;
+}
+.rgrid {
+  display: flex;
+  flex-direction: column;
+}
+.rgrid h3 {
+  padding: 1rem 0;
+}
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+label {
+  margin-left: 5rem;
+}
+#started {
+  width: 10rem;
+  background-color: #006248;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.choose {
+  padding: 1rem;
+}
+.degreeOption {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.degree {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  background-color: #006248;
+  color: white;
+  border-radius: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.course-table,
+.new-course-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.course-table th,
+.course-table td,
+.new-course-table th,
+.new-course-table td {
+  border: 1px solid #006248; /* Add border to cells */
+  padding: 8px;
+  text-align: left;
+}
+
+.course-table th,
+.new-course-table th {
+  background-color: #006248; /* Set background color for header */
+  color: #fff; /* Set text color for header */
+}
+
+.course-table tr:nth-child(even),
+.new-course-table tr:nth-child(even) {
+  background-color: #006248b4; /* Set background color for even rows */
+  color: #fff; /* Set text color for even rows */
+}
+.input-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.input-container input,
+.input-container button {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.input-container button {
+  background-color: #006248;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.total-completed-credits, .credit-calculation {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #006248;
+}
+.div input  {
+  padding: 1rem;
+  width: 5rem;
+  background-color: #006248;
+  color: white;
+  border-radius: 10px;
+}
