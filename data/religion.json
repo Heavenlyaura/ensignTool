@@ -1,0 +1,46 @@
+{
+  "REL": {
+    "rel200": {
+      "courseCode": "REL 200",
+      "courseTitle": "The Eternal Family",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel225": {
+      "courseCode": "REL 225",
+      "courseTitle": "Foundations of the Restoration",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel250": {
+      "courseCode": "REL 250",
+      "courseTitle": "Jesus Christ & His Everlasting Gospel",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel275": {
+      "courseCode": "REL 275",
+      "courseTitle": "Teachings of the Book of Mormon",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective1": {
+      "courseCode": "Religion Elective",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective2": {
+      "courseCode": "Religion Elective",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective3": {
+      "courseCode": "Religion Elective",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
+    }
+  }
+}
