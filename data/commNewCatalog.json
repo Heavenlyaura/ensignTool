@@ -1,5 +1,5 @@
 {
-  "c1": {
+  "Social Media Marketing": {
     "dm105": {
       "courseCode": "DM 105",
       "courseTitle": "Introduction to Digital Marketing",
@@ -31,7 +31,7 @@
       "credit": "3"
     }
   },
-  "c2": {
+  "Communication Fundamentals ": {
     "dcc180": {
       "courseCode": "DCC 180",
       "courseTitle": "Fundamentals of Content Creation",
@@ -63,7 +63,7 @@
       "credit": "3"
     }
   },
-  "c3": {
+  "Communication Core": {
     "comm300": {
       "courseCode": "COMM 300",
       "courseTitle": "Communication Career Workshop",
@@ -95,7 +95,7 @@
       "credit": "3"
     }
   },
-  "GE": {
+  "General Education": {
     "ge103": {
       "courseCode": "GE 103",
       "courseTitle": "Online University Skills",
@@ -201,7 +201,7 @@
       "credit": "3"
     }
   },
-  "REL": {
+  "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",

@@ -1,5 +1,5 @@
 {
-  "c1": {
+  "Technical Support Engineer": {
     "it102": {
       "courseCode": "IT 102",
       "courseTitle": "PC Hardware Technician",
@@ -37,7 +37,7 @@
       "credit": "3"
     }
   },
-  "c2": {
+  "IT Fundamentals ": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -73,7 +73,7 @@
       "credit": "3"
     }
   },
-  "c3": {
+  "System Administration": {
     "it330": {
       "courseCode": "IT 330",
       "courseTitle": "Azure Technologies",
@@ -109,7 +109,7 @@
       "credit": "3"
     }
   },
-  "REL": {
+  "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",
@@ -153,7 +153,7 @@
       "credit": "2"
     }
   },
-  "GE": {
+  "General Education": {
     "ge103": {
       "courseCode": "GE 103",
       "courseTitle": "Online University Skills",
