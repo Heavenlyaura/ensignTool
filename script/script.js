@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let totalCompletedCredits = 0;
   let completedCourses = {};
   let addedCourses = [];
+  let substitutedCourses = {};
   const oldCatalogTotalCredits = 120;
   const newCatalogTotalCredits = 90;
 
@@ -85,13 +86,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         const creditCell = event.target.parentNode.previousElementSibling;
         const credits = parseInt(creditCell.textContent);
 
+        if (completedCourses[courseCode] === 'yes') {
+          totalCompletedCredits -= credits;
+        }
+
         completedCourses[courseCode] = selectedValue;
 
         if (selectedValue === 'yes') {
           totalCompletedCredits += credits;
-        } else if (selectedValue === 'no') {
-          totalCompletedCredits -= credits;
         }
+
         updateTotalCredits();
       }
     });
@@ -109,12 +113,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     inputContainer.appendChild(courseCodeInput);
     inputContainer.appendChild(creditsInput);
     inputContainer.appendChild(addButton);
+
+    // Create dropdown menu with all displayed courses
+    function createSubstituteDropdown() {
+      const dropdown = document.createElement('select');
+      dropdown.id = 'substitute-dropdown';
+      dropdown.innerHTML = '<option value="">Select course to substitute</option>';
+
+      // Populate dropdown with course codes from displayed courses
+      const courseRows = document.querySelectorAll('.course-table tr:not(.new-course-table) td:first-child');
+      courseRows.forEach(courseRow => {
+        const courseCode = courseRow.textContent.trim();
+        const option = document.createElement('option');
+        option.value = courseCode;
+        option.textContent = courseCode;
+        dropdown.appendChild(option);
+      });
+
+      return dropdown;
+    }
+
+    const substituteDropdown = createSubstituteDropdown();
+    inputContainer.appendChild(substituteDropdown);
+
     container.appendChild(inputContainer);
 
     addButton.addEventListener('click', () => {
       const courseCode = courseCodeInput.value.trim();
       const credits = parseInt(creditsInput.value.trim());
+
       if (courseCode && credits && !isNaN(credits)) {
+        const substituteCourseCode = substituteDropdown.value;
+        if (substituteCourseCode) {
+          // Find the row of the substitute course
+          const substituteCourseRow = Array.from(container.querySelectorAll('tr')).find(row =>
+            row.querySelector('td:first-child')?.textContent === substituteCourseCode);
+
+          if (substituteCourseRow) {
+            // Remove the substitute course and adjust total credits
+            const creditCell = substituteCourseRow.querySelector('td:nth-child(4)');
+            const creditsToSubtract = parseInt(creditCell.textContent);
+            totalCompletedCredits -= creditsToSubtract * 2;
+            substituteCourseRow.remove();
+            substitutedCourses[substituteCourseCode] = true; // Mark course as substituted
+          } else {
+            alert('Course to substitute not found!');
+          }
+        }
         addedCourses.push({ courseCode, credits });
         appendCourse(courseCode, credits);
         courseCodeInput.value = '';
@@ -198,6 +243,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     degree.addEventListener('click', async () => {
       let degreeName = degree.value;
       console.log(degreeName);
+      totalCompletedCredits = 0; // Reset total completed credits
+      completedCourses = {}; // Reset completed courses
+      addedCourses = []; // Reset added courses
+      substitutedCourses = {}; // Reset substituted courses
+
       if (degreeName === 'Communication') {
         const commOldCatalog = await getCommOld();
         displayCommOld(commOldCatalog);
@@ -206,30 +256,19 @@ document.addEventListener('DOMContentLoaded', async () => {
           const commNewCatalog = await getCommNew();
           console.log(commNewCatalog);
           displayCommOld(commNewCatalog, true);
-          disableDropdowns();
           calculateCredits();
-        });
-      }
-      else if (degreeName === "Information Technology") {
-        const iTOldCatalog = await getItOld()
-        console.log(iTOldCatalog)
-        displayCommOld(iTOldCatalog);
+        }, { once: true }); // Ensure the event is added only once
+      } else if (degreeName === 'Information Technology') {
+        const itOldCatalog = await getItOld();
+        displayCommOld(itOldCatalog);
 
         next.addEventListener('click', async () => {
-          const iTNewCatalog = await getItNew();
-          console.log(iTNewCatalog);
-          displayCommOld(iTNewCatalog, true);
-          disableDropdowns();
+          const itNewCatalog = await getItNew();
+          console.log(itNewCatalog);
+          displayCommOld(itNewCatalog, true);
           calculateCredits();
-        });
+        }, { once: true }); // Ensure the event is added only once
       }
     });
   });
-
-  function disableDropdowns() {
-    const dropdowns = document.querySelectorAll('.completed-dropdown');
-    dropdowns.forEach(dropdown => {
-      dropdown.disabled = true;
-    });
-  }
-});
+})  
