@@ -210,6 +210,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           calculateCredits();
         });
       }
+      else if (degreeName === "Information Technology") {
+        
+      }
     });
   });
 

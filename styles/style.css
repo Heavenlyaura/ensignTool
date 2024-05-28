@@ -131,19 +131,21 @@ label {
   font-weight: bolder;
   cursor: pointer;
 }
-.total-completed-credits, .credit-calculation {
+.total-completed-credits,
+.credit-calculation {
   padding: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   background-color: #006248;
 }
-.div input  {
+.div input {
   padding: 1rem;
   width: 5rem;
   background-color: #006248;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
