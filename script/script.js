@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     return await fetchData(api);
   }
 
-  async function getReligion() {
-    let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/religion.json";
+  async function getItOld() {
+    let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/ITOldCatalog.json";
     return await fetchData(api);
   }
 
-  async function getGE() {
-    let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/generalEducation.json";
+  async function getItNew() {
+    let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/iTNewCatalog.json";
     return await fetchData(api);
   }
 
@@ -211,7 +211,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
       }
       else if (degreeName === "Information Technology") {
-        
+        const iTOldCatalog = await getItOld()
+        console.log(iTOldCatalog)
+        displayCommOld(iTOldCatalog);
+
+        next.addEventListener('click', async () => {
+          const iTNewCatalog = await getItNew();
+          console.log(iTNewCatalog);
+          displayCommOld(iTNewCatalog, true);
+          disableDropdowns();
+          calculateCredits();
+        });
       }
     });
   });
