@@ -1,5 +1,5 @@
 {
-  "c1": {
+  "Technical Support Engineer": {
     "cs105": {
       "courseCode": "CS 105",
       "courseTitle": "Introduction to Programming",
@@ -46,7 +46,7 @@
       "credit": "3"
     }
   },
-  "c2": {
+  "IT Fundamentals": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -92,7 +92,7 @@
       "upperDivision": "NO"
     }
   },
-  "c3": {
+  "System Administration": {
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
@@ -132,7 +132,7 @@
       "credit": "3"
     }
   },
-  "REL": {
+  "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",
@@ -176,7 +176,7 @@
       "credit": "2"
     }
   },
-  "GE": {
+  "General Education": {
     "ge103": {
       "courseCode": "GE 103",
       "courseTitle": "Online University Skills",
