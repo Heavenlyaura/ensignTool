@@ -143,9 +143,15 @@ label {
   cursor: pointer;
 }
 
+.iframe {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 900px) {
   .main {
     flex-direction: column-reverse;
     gap: 2rem;
   }
 }
+
