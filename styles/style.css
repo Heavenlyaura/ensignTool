@@ -88,30 +88,25 @@ label {
   cursor: pointer;
 }
 
-.course-table,
-.new-course-table {
+#table-container table {
   border-collapse: collapse;
   width: 90%;
   margin: 1rem auto;
 }
 
-.course-table th,
-.course-table td,
-.new-course-table th,
-.new-course-table td {
+#table-container th,
+#table-container td {
   border: 1px solid #006248; /* Add border to cells */
   padding: 8px;
   text-align: left;
 }
 
-.course-table th,
-.new-course-table th {
+#table-container th {
   background-color: #006248; /* Set background color for header */
   color: #fff; /* Set text color for header */
 }
 
-.course-table tr:nth-child(even),
-.new-course-table tr:nth-child(even) {
+#table-container tr:nth-child(even) {
   background-color: #006248b4; /* Set background color for even rows */
   color: #fff; /* Set text color for even rows */
 }
