@@ -38,12 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
       let degreeName = degree.value;
       if (degreeName === "Communication") {
         const commOldData = await getCommOld();
+        console.log(commOldData)
         createTableFromJson(commOldData);
 
         next.addEventListener('click', async () => {
           const commNewData = await getCommNew();
           const selectedValues = saveSelectedValues();
           createTableFromJson(commNewData);
+          restoreSelectedValues(selectedValues);
+        });
+      }
+      else if (degreeName === "Information Technology") {  
+        const ItOld = await getItOld();
+        createTableFromJson(ItOld);
+
+        next.addEventListener('click', async () => {
+          const ItNew = await getItNew();
+          const selectedValues = saveSelectedValues();
+          createTableFromJson(ItNew);
           restoreSelectedValues(selectedValues);
         });
       }
