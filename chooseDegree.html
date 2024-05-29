@@ -24,28 +24,54 @@
         <input type="submit" value="Communication" class="degree">
         <input type="submit" value="Information Technology" class="degree">
       </div>
-      <div id="table-container"></div>
-      <select id="substitution-dropdown">
-        <option value="">Select a course to substitute</option>
-      </select>
-      <input type="text" id="course-code-input" placeholder="Course Code">
-      <input type="text" id="credits-input" placeholder="Credits">
-      <button id="add-course-button">Add Course</button>
-      <div class="add-course-table">
-        <table id="added-courses-table">
-          <thead>
-            <tr>
-              <th>Course Code</th>
-              <th class="added-credit">Credits</th> <!-- Include "credit-cell" class here -->
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
+      <div class="pre-degree">
+        <h3>Did you Complete PathwayConnect?: </h3>
+        <select name="pathway" id="pathway">
+          <option value="">Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <div class="alternative">
+          <p>Add the following Eqiuvalent courses if completed: </p>
+          <ul>
+            <li>SS 160: Leadership & Human Behaviour - 3 Credits</li>
+            <li>BUS 202: Organizational Effectiveness - 3 Credits</li>
+            <li>GE 103: Online University Skills - 1 Credit</li>
+          </ul>
+        </div>
       </div>
-      <h3 id="total-credits">Total Completed Credits: 0</h3>
-      <div class="div">
-        <input type="submit" value="Next" id="next">
+      <div id="table-container"></div>
+      <div class="footer-section">
+        <select id="substitution-dropdown">
+          <option value="">Select a course to substitute</option>
+        </select>
+        <input type="text" id="course-code-input" placeholder="Course Code">
+        <input type="text" id="credits-input" placeholder="Credits">
+        <button id="add-course-button">Add Course</button>
+        <div class="add-course-table">
+          <table id="added-courses-table">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Equivalent Courses</th>
+                <th class="added-credit">Credits</th>
+                <th>Completed</th> <!-- Include "credit-cell" class here -->
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <h3 id="total-credits">Total Completed Credits: 0</h3>
+        <div class="div">
+          <input type="submit" value="Next" id="next">
+        </div>
+        <div class="analysis">
+          <h3 id="old-catalog">Credit left on Old Catalog: 0</h3>
+          <h3 id="new-catalog">Credit left on New Catalog: 0</h3>
+          <h3 id="saved">Credits Saved: 0</h3>
+        </div>
       </div>
     </div>
   </main>

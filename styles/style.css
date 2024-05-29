@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  font-family: "Open Sans", Courier, monospace;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -59,7 +62,7 @@ form {
   margin: auto;
   border-radius: 10px;
 }
-label {
+form label {
   margin-left: 5rem;
 }
 #started {
@@ -88,25 +91,29 @@ label {
   cursor: pointer;
 }
 
-#table-container table {
+#table-container table, #added-courses-table {
   border-collapse: collapse;
   width: 90%;
   margin: 1rem auto;
 }
 
 #table-container th,
-#table-container td {
+#table-container td,
+#added-courses-table th,
+#added-courses-table td {
   border: 1px solid #006248; /* Add border to cells */
   padding: 8px;
   text-align: left;
 }
 
-#table-container th {
+#table-container th,
+#added-courses-table th {
   background-color: #006248; /* Set background color for header */
   color: #fff; /* Set text color for header */
 }
 
-#table-container tr:nth-child(even) {
+#table-container tr:nth-child(even),
+#added-courses-table tr:nth-child(even) {
   background-color: #006248b4; /* Set background color for even rows */
   color: #fff; /* Set text color for even rows */
 }
@@ -148,10 +155,77 @@ label {
   justify-content: center;
 }
 
+.pre-degree {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #006248;
+  width: 80%;
+  margin: 2rem auto;
+  height: 50vh;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.alternative ul {
+  padding: 1rem;
+}
+.alternative ul li {
+  padding: 5px;
+}
+#pathway {
+  padding: 0.8rem;
+  width: 150px;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.footer-section {
+  margin: 2rem;
+}
+#substitution-dropdown,
+#course-code-input,
+#credits-input
+ {
+  padding: 1rem .4rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+#add-course-button {
+  padding: 1rem .4rem;
+  border-radius: 1rem;
+  background-color: #006248;
+  color: #fff;
+}
+.add-course-table {
+  margin: 1.5rem 0;
+}
+#table-container h2 {
+  margin-left: 2rem;
+  padding: .5rem 0;
+}
+#table-container select {
+  padding: .5rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.1rem;
+}
+#total-credits {
+  margin: 2rem 0;
+}
+.analysis {
+  margin: 2rem 0;
+  background-color: #006248;
+  color: white;
+  height: 20vh;
+  text-align: center;
+}
+.analysis h3 {
+  padding:10px 0;
+}
+
 @media (max-width: 900px) {
   .main {
     flex-direction: column-reverse;
     gap: 2rem;
   }
 }
-

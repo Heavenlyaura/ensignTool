@@ -6,6 +6,14 @@ import { saveSelectedValues, restoreSelectedValues } from "./saveRestore.js";
 document.addEventListener('DOMContentLoaded', () => {
   const degreeOptions = document.querySelectorAll('.degree')
   const next = document.querySelector('#next')
+  const footerSection = document.querySelector('.footer-section')
+  const analysis = document.querySelector('.analysis')
+  const pathway = document.querySelector('#pathway')
+  const alternative = document.querySelector('.alternative')
+
+  analysis.style.display = 'none'
+  footerSection.style.display = 'none'
+  alternative.style.display = 'none'
 
   document.getElementById('add-course-button').addEventListener('click', () => {
     const courseCodeInput = document.getElementById('course-code-input');
@@ -15,15 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (courseCode !== '' && !isNaN(credits)) {
       const substitutionDropdown = document.getElementById('substitution-dropdown');
-      console.log(substitutionDropdown)
-      console.log(substitutionDropdown.value)
       const substitutedValue = substitutionDropdown.value
       if (substitutedValue) {
         substituteCourse(courseCode, credits, substitutedValue);
       } else {
         addCourseToTable(courseCode, credits);
       }
-      console.log(substitutedValue)
       // Reset input fields
       courseCodeInput.value = '';
       creditsInput.value = '';
@@ -32,6 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  pathway.addEventListener('change', () => {
+    let choice = pathway.value
+    if (choice === 'No') {
+      alternative.style.display = 'block'
+      updateCompletedCredits()
+    } else {
+      alternative.style.display = 'none'
+      updateCompletedCredits()
+    }
+  })
   degreeOptions.forEach(degree => {
     degree.addEventListener('click', async () => {
       degree.disabled = true;
@@ -46,9 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
           const selectedValues = saveSelectedValues();
           createTableFromJson(commNewData);
           restoreSelectedValues(selectedValues);
+          analysis.style.display = 'block'
         });
       }
-      else if (degreeName === "Information Technology") {  
+      else if (degreeName === "Information Technology") {
         const ItOld = await getItOld();
         createTableFromJson(ItOld);
 
@@ -57,8 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
           const selectedValues = saveSelectedValues();
           createTableFromJson(ItNew);
           restoreSelectedValues(selectedValues);
+          analysis.style.display = 'block'
         });
       }
+      footerSection.style.display = 'block'
     });
   });
 });

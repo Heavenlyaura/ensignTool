@@ -119,14 +119,11 @@ function populateSubstitutionDropdown() {
 }
 
 export function substituteCourse(newCourseCode, newCredits, substituteCourseCode) {
-  console.log('new course',substituteCourseCode)
-  console.log('new course',newCourseCode)
   // Find and remove the substituted course from the table
   const tables = [document.getElementById('table-container'), document.getElementById('added-courses-table')];
   let oldCredits = 0;
 
   tables.forEach(table => {
-    console.log(table)
     const rows = table.querySelectorAll('tr');
     rows.forEach(row => {
       const courseCodeCell = row.querySelector('td:first-child');

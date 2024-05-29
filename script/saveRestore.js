@@ -8,7 +8,6 @@ export function saveSelectedValues() {
     const completed = select.closest('tr').querySelector('td:last-child').textContent;
     selectedValues
   });
-  console.log(selectedValues)
   return selectedValues;
 }
 
@@ -17,13 +16,9 @@ export function restoreSelectedValues(selectedValues) {
     const tableContainer = document.getElementById('table-container');
     const selectElements = tableContainer.querySelectorAll('select');
     // const select = document.querySelector(`[data-course-id="${courseId}"]`);
-    let loop  = 0
     selectElements.forEach(select => {
       const courseId = select.closest('tr').querySelector('td:first-child').textContent;
       if (courseId) {
-        loop+=1
-        console.log('Loop:', loop)
-        
         select.value = selectedValues[courseId];
         select.disabled = true; // Disable the select element
       }
