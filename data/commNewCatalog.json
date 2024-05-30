@@ -227,19 +227,19 @@
       "credit": "2"
     },
     "religionElective1": {
-      "courseCode": "Religion Elective",
+      "courseCode": "Religion Elective-1",
       "courseTitle": "Religion Course",
       "equivalent": {},
       "credit": "2"
     },
     "religionElective2": {
-      "courseCode": "Religion Elective",
+      "courseCode": "Religion Elective-2",
       "courseTitle": "Religion Course",
       "equivalent": {},
       "credit": "2"
     },
     "religionElective3": {
-      "courseCode": "Religion Elective",
+      "courseCode": "Religion Elective-3",
       "courseTitle": "Religion Course",
       "equivalent": {},
       "credit": "2"
