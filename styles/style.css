@@ -222,6 +222,11 @@ form label {
 .analysis h3 {
   padding:10px 0;
 }
+.old-pathway p {
+  font-style: italic;
+  font-size: .9rem;
+  padding: 5px 0; 
+}
 
 @media (max-width: 900px) {
   .main {

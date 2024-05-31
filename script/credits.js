@@ -1,4 +1,4 @@
-export function calculateCompletedCredits(initialCredit = 0) {
+export function calculateCompletedCredits() {
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
@@ -24,10 +24,10 @@ export function calculateCompletedCredits(initialCredit = 0) {
   return totalCredits;
 }
 
-export function updateCompletedCredits(initialCredit = 0) {
+export function updateCompletedCredits(oldPathwayChoice) {
   const oldCatalog = 120
   const newCatalog = 90
-  let totalCredits = calculateCompletedCredits(initialCredit);
+  let totalCredits = calculateCompletedCredits();
   const creditsDisplay = document.getElementById('total-credits');
   const leftOnOld = document.getElementById('old-catalog');
   const leftOnNew = document.getElementById('new-catalog');
@@ -35,9 +35,12 @@ export function updateCompletedCredits(initialCredit = 0) {
   const pathway = document.querySelector('#pathway')
   
   let choice = pathway.value
-  if (choice === 'Yes') {
+  if (choice === 'Yes' && oldPathwayChoice === "No") {
     totalCredits += 7
   } 
+  else if (choice === "Yes" && oldPathwayChoice === "Yes") {
+    totalCredits += 15
+  }
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
   
