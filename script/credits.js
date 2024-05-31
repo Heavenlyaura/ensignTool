@@ -23,8 +23,14 @@ export function calculateCompletedCredits() {
   });
   return totalCredits;
 }
+function getSelectedValue() {
+  const selectedRadioButton = document.querySelector('input[name="old-pathway"]:checked');
+  const selectedValue = selectedRadioButton ? selectedRadioButton.value : 'None';
+  // alert("Selected Topic: " + selectedValue);
+  return selectedValue
+}
 
-export function updateCompletedCredits(oldPathwayChoice) {
+export function updateCompletedCredits() {
   const oldCatalog = 120
   const newCatalog = 90
   let totalCredits = calculateCompletedCredits();
@@ -33,17 +39,18 @@ export function updateCompletedCredits(oldPathwayChoice) {
   const leftOnNew = document.getElementById('new-catalog');
   const creditSaved = document.getElementById('saved');
   const pathway = document.querySelector('#pathway')
-  
+  let selectedValue = getSelectedValue()
+
   let choice = pathway.value
-  if (choice === 'Yes' && oldPathwayChoice === "No") {
+  if (choice === 'Yes' && selectedValue === "No") {
     totalCredits += 7
-  } 
-  else if (choice === "Yes" && oldPathwayChoice === "Yes") {
+  }
+  else if (choice === "Yes" && selectedValue === "Yes") {
     totalCredits += 15
   }
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
-  
+
 
   creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;
   leftOnOld.textContent = `Credits Left On Old Catalog: ${remainingCreditsOld}`;
