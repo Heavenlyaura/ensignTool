@@ -1,9 +1,10 @@
 import { getCommNew, getCommOld, getItNew, getItOld } from "./fetchData.js";
 import { createTableFromJson, addCourseToTable, substituteCourse } from "./createTable.js"
-import { updateCompletedCredits } from "./credits.js";
+import { storeNotCompletedCourses, updateCompletedCredits } from "./credits.js";
 import { saveSelectedValues, restoreSelectedValues } from "./saveRestore.js";
 
 document.addEventListener('DOMContentLoaded', () => {
+  localStorage.clear();
   const degreeOptions = document.querySelectorAll('.degree')
   const next = document.querySelector('#next')
   const footerSection = document.querySelector('.footer-section')
@@ -68,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   degreeOptions.forEach(degree => {
     degree.addEventListener('click', async () => {
       degree.disabled = true;
+      // const stored = localStorage.getItem('notCompleted')
+      // console.log(stored)
       let degreeName = degree.value;
       if (degreeName === "Communication") {
         const commOldData = await getCommOld();
@@ -79,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
           createTableFromJson(commNewData);
           restoreSelectedValues(selectedValues);
           analysis.style.display = 'block'
+          storeNotCompletedCourses()
         });
       }
       else if (degreeName === "Information Technology") {
@@ -91,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
           createTableFromJson(ItNew);
           restoreSelectedValues(selectedValues);
           analysis.style.display = 'block'
+          storeNotCompletedCourses()
         });
       }
       footerSection.style.display = 'block'

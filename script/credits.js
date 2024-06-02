@@ -57,3 +57,23 @@ export function updateCompletedCredits() {
   leftOnNew.textContent = `Credits Left On New Catalog: ${remainingCreditsNew}`;
   creditSaved.textContent = `Credits Saved: ${newCatalog - totalCredits}`;
 }
+export function storeNotCompletedCourses() {
+  const tableContainer = document.getElementById('table-container');
+  const selectElements = tableContainer.querySelectorAll('select');
+  const notCompletedCourses = [];
+
+  selectElements.forEach(select => {
+    if (select.value !== 'Yes') {
+      const creditCell = select.closest('tr').querySelector('.credit-cell').textContent;
+      const courseCode = select.closest('tr').querySelector('td:first-child').textContent;
+      const courseTitle = select.closest('tr').querySelector('td:nth-child(2)').textContent;
+      const courseData = { courseCode, courseTitle, creditCell };
+      console.log(courseCode, creditCell, courseTitle)
+      notCompletedCourses.push(courseData);
+    }
+  });
+
+  // Store the array of not completed courses in local storage
+  localStorage.setItem('notCompleted', JSON.stringify(notCompletedCourses));
+}
+ 
