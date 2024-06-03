@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  padding: 1rem;
+}
 body {
   font-family: "Open Sans", Courier, monospace;
   max-width: 1440px;
@@ -226,6 +229,15 @@ form label {
   font-style: italic;
   font-size: .9rem;
   padding: 5px 0; 
+}
+.uncompleted {
+  padding: 1rem;
+}
+.uncompleted ul {
+  padding: 1rem
+}
+.uncompleted ul li {
+  padding: .5rem;
 }
 
 @media (max-width: 900px) {

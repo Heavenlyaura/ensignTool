@@ -7,13 +7,15 @@ export function createTableFromJson(data) {
   tableContainer.innerHTML = ''; // Clear any existing content
 
   for (const category in data) {
-    // Create and append category header
-    const categoryHeader = document.createElement('h2');
-    categoryHeader.textContent = category;
-    tableContainer.appendChild(categoryHeader);
-
+    
     // Create table
     const table = document.createElement('table');
+    
+    // Create and append category header
+    const categoryHeader = document.createElement('caption');
+    categoryHeader.textContent = category;
+
+    table.appendChild(categoryHeader)
 
     // Create table header
     const thead = document.createElement('thead');

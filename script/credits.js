@@ -62,18 +62,58 @@ export function storeNotCompletedCourses() {
   const selectElements = tableContainer.querySelectorAll('select');
   const notCompletedCourses = [];
 
-  selectElements.forEach(select => {
-    if (select.value !== 'Yes') {
-      const creditCell = select.closest('tr').querySelector('.credit-cell').textContent;
-      const courseCode = select.closest('tr').querySelector('td:first-child').textContent;
-      const courseTitle = select.closest('tr').querySelector('td:nth-child(2)').textContent;
-      const courseData = { courseCode, courseTitle, creditCell };
-      console.log(courseCode, creditCell, courseTitle)
-      notCompletedCourses.push(courseData);
-    }
-  });
+  if (tableContainer) {
+    const tables = tableContainer.querySelectorAll('table')
+    tables.forEach((table) => {
+      const caption = table.querySelector('caption').textContent
+      console.log(caption)
+      const rows = table.querySelectorAll('tr')
+      rows.forEach((row, index) => {
+        // Skip the header
+        if (index > 0) {
+          const cells = row.querySelectorAll('td')
+          if (cells.length > 0) {
+
+            const completedCell = cells[cells.length - 1]
+
+            const select = completedCell.querySelector('select')
+            if (select && select.value !== 'Yes') {
+              const courseCode = cells[0].textContent
+              const courseTitle = cells[1].textContent
+              const creditCell = cells[3].textContent
+              const courseData = { caption, courseCode, courseTitle, creditCell };
+              console.log(courseData)
+              notCompletedCourses.push(courseData)
+            }
+          }
+        }
+      });
+    })
+  }
+
+  localStorage.setItem('notCompleted', JSON.stringify(notCompletedCourses));
+
+
+
+
+
+
+
+
+
+
+
+
+  // selectElements.forEach(select => {
+  //   if (select.value !== 'Yes') {
+  //     const creditCell = select.closest('tr').querySelector('.credit-cell').textContent;
+  //     const courseCode = select.closest('tr').querySelector('td:first-child').textContent;
+  //     const courseTitle = select.closest('tr').querySelector('td:nth-child(2)').textContent;
+  //     const courseData = { courseCode, courseTitle, creditCell };
+  //     console.log(courseCode, creditCell, courseTitle)
+  //     notCompletedCourses.push(courseData);
+  //   }
+  // });
 
   // Store the array of not completed courses in local storage
-  localStorage.setItem('notCompleted', JSON.stringify(notCompletedCourses));
 }
- 

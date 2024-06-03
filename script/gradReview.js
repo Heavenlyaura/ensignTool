@@ -3,16 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const storedCourses = localStorage.getItem('notCompleted')
   const uncompletedCourses = JSON.parse(storedCourses)
   if (storedCourses) {
+    let list = document.createElement('ul')
     uncompletedCourses.forEach(course => {
-      // console.log(course)
-      let list = document.createElement('ul')
       let listItem = document.createElement('li')
-      let listText = `${course.courseCode}: ${course.courseTitle} - ${course.creditCell}`
-      console.log(listText)
+      let listText = `${course.courseCode}: ${course.courseTitle} - ${course.creditCell} - ${course.caption}`
       listItem.textContent = listText
       list.appendChild(listItem)
-      uncompletedDiv.appendChild(list)
     });
+    uncompletedDiv.appendChild(list)
   }
 
 
