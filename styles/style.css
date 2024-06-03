@@ -225,6 +225,10 @@ form label {
 .analysis h3 {
   padding:10px 0;
 }
+.analysis a {
+  color: white;
+  padding: 1rem;
+}
 .old-pathway p {
   font-style: italic;
   font-size: .9rem;
