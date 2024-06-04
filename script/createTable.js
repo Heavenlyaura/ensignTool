@@ -5,9 +5,7 @@ import { updateCompletedCredits, calculateCompletedCredits } from './credits.js'
 export function createTableFromJson(data) {
   const tableContainer = document.getElementById('table-container');
   tableContainer.innerHTML = ''; // Clear any existing content
-
   for (const category in data) {
-
     // Create table
     const table = document.createElement('table');
 
@@ -37,11 +35,11 @@ export function createTableFromJson(data) {
 
       const courseCodeCell = document.createElement('td');
       courseCodeCell.textContent = courseData.courseCode;
+      courseCodeCell.setAttribute('data-upperdiv', courseData.upperDivision);
       row.appendChild(courseCodeCell);
 
       const courseTitleCell = document.createElement('td');
       courseTitleCell.textContent = courseData.courseTitle;
-      courseTitleCell.setAttribute('data-upperdiv', courseData.upperDivision);
 
 
       row.appendChild(courseTitleCell);

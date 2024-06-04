@@ -2,26 +2,34 @@ export function calculateCompletedCredits() {
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
+  let upperDivCredit = 0
+  const addedCoursesTable = document.getElementById('added-courses-table');
+  const addedCreditCells = addedCoursesTable.querySelectorAll('.credit-cell');
+  // const upperDivCheck = document.querySelector('#UpperDivisionCheck')
+  // const addedCreditCell = document.querySelector('#credits-input')
 
   selectElements.forEach(select => {
     if (select.value === 'Yes') {
       const creditCell = select.closest('tr').querySelector('.credit-cell');
+      console.log(creditCell.textContent)
       if (creditCell && !isNaN(parseInt(creditCell.textContent))) { // Check if creditCell exists and is a valid number
         totalCredits += parseInt(creditCell.textContent);
+        const courseCode = select.closest('tr').querySelector('td');
+        let upperDivision = courseCode.getAttribute('data-upperDiv')
+        if (upperDivision == 'Yes') {
+          upperDivCredit += parseInt(creditCell.textContent)
+        }
       }
     }
   });
 
-  const addedCoursesTable = document.getElementById('added-courses-table');
-  const addedCreditCells = addedCoursesTable.querySelectorAll('.credit-cell');
-  let loop = 0
   addedCreditCells.forEach(creditCell => {
     const creditValue = parseInt(creditCell.textContent);
     if (!isNaN(creditValue)) { // Ensure the value is a valid number
       totalCredits += creditValue;
     }
   });
-  return totalCredits;
+  return { totalCredits, upperDivCredit };
 }
 function getSelectedValue() {
   const selectedRadioButton = document.querySelector('input[name="old-pathway"]:checked');
@@ -33,8 +41,9 @@ function getSelectedValue() {
 export function updateCompletedCredits() {
   const oldCatalog = 120
   const newCatalog = 90
-  let totalCredits = calculateCompletedCredits();
+  const { totalCredits, upperDivCredit } = calculateCompletedCredits();
   const creditsDisplay = document.getElementById('total-credits');
+  const upperDiv = document.getElementById('upperDivCredit');
   const leftOnOld = document.getElementById('old-catalog');
   const leftOnNew = document.getElementById('new-catalog');
   const creditSaved = document.getElementById('saved');
@@ -51,7 +60,7 @@ export function updateCompletedCredits() {
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
 
-
+  upperDiv.textContent = `Upper Division Credits: ${upperDivCredit}/30`
   creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;
   leftOnOld.textContent = `Credits Left On Old Catalog: ${remainingCreditsOld}`;
   leftOnNew.textContent = `Credits Left On New Catalog: ${remainingCreditsNew}`;
