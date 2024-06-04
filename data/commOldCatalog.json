@@ -7,7 +7,8 @@
         "course1": "DM 105",
         "course2": "SMMBC 105"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "dm120": {
@@ -16,7 +17,8 @@
       "equivalent": {
         "course1": "SMMBC 120"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "dm150": {
@@ -25,7 +27,8 @@
       "equivalent": {
         "course1": "SMMBC 150"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "smm130": {
@@ -34,7 +37,8 @@
       "equivalent": {
         "course1": "SMMBC 105"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "gs170": {
@@ -43,7 +47,8 @@
       "equivalent": {
         "course1": "CAR 201P"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "dm160": {
@@ -52,7 +57,8 @@
       "equivalent": {
         "course1": "SMMBC 160"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     }
   },
 
@@ -61,31 +67,36 @@
       "courseCode": "DCC 180",
       "courseTitle": "Fundamentals of Content Creation",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "comm210": {
       "courseCode": "COMM 210",
       "courseTitle": "Mass Communication and Society",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "comm310": {
       "courseCode": "COMM 310",
       "courseTitle": "Writing for Communication Careers",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
     "comm320": {
       "courseCode": "COMM 320",
       "courseTitle": "Public Speaking",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
     "comm330": {
       "courseCode": "COMM 330",
       "courseTitle": "Digital Communication",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
 
@@ -94,34 +105,38 @@
       "courseCode": "COMM 300",
       "courseTitle": "Communication Career Workshop",
       "equivalent": {},
-      "credit": "1"
+      "credit": "1",
+      "upperDivision": "Yes"
     },
     "comm350": {
       "courseCode": "COMM 350",
       "courseTitle": "Communication Research Methods",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
     "comm360": {
       "courseCode": "COMM 360",
       "courseTitle": "Conflict Management",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
     "comm370": {
       "courseCode": "COMM 370",
       "courseTitle": "Media Law and Ethics",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
     "comm380": {
       "courseCode": "COMM 380",
       "courseTitle": "Communication Project Management",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
-
   "General Education": {
     "ge103": {
       "courseCode": "GE 103",
@@ -130,25 +145,29 @@
         "course1": "CAR 101",
         "course2": "PC 103"
       },
-      "credit": "1"
+      "credit": "1",
+      "upperDivision": "No"
     },
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "eng201": {
       "courseCode": "ENG 201",
       "courseTitle": "Intermediate College Writing",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "mat252": {
       "courseCode": "MAT 252",
@@ -156,7 +175,8 @@
       "equivalent": {
         "course1": "MATH 221A"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "comm122": {
       "courseCode": "COMM 122",
@@ -165,7 +185,8 @@
         "course1": "COMM 150",
         "course2": "COMM 175"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "pols110": {
       "courseCode": "POLS 110",
@@ -174,7 +195,8 @@
         "course1": "POLSC 110",
         "course2": "any AI GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "ls103": {
       "courseCode": "LS 103",
@@ -184,7 +206,8 @@
         "course2": "LS 303",
         "course3": "any LS GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "ps120": {
       "courseCode": "PS 120",
@@ -193,7 +216,8 @@
         "course1": "GEO 111",
         "course2": "any PS GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "econ162": {
       "courseCode": "ECON 162",
@@ -202,13 +226,15 @@
         "course1": "ECON 151",
         "course2": "any SS GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "geo10": {
       "courseCode": "GE0 10",
       "courseTitle": "GEOGRAPHY",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "econ161": {
       "courseCode": "ECON 161",
@@ -217,7 +243,8 @@
         "course1": "ECON 150",
         "course2": "any SS GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
     "art101": {
       "courseCode": "ART 101",
@@ -225,52 +252,59 @@
       "equivalent": {
         "course1": "any FA GE"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     }
   },
-
   "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "rel225": {
       "courseCode": "REL 225",
       "courseTitle": "Foundations of the Restoration",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "rel250": {
       "courseCode": "REL 250",
       "courseTitle": "Jesus Christ & His Everlasting Gospel",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "rel275": {
       "courseCode": "REL 275",
       "courseTitle": "Teachings of the Book of Mormon",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "religionElective1": {
       "courseCode": "Religion Elective-1",
       "courseTitle": "Religion Course",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "religionElective2": {
       "courseCode": "Religion Elective-2",
       "courseTitle": "Religion Course",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     },
     "religionElective3": {
       "courseCode": "Religion Elective-3",
       "courseTitle": "Religion Course",
       "equivalent": {},
-      "credit": "2"
+      "credit": "2",
+      "upperDivision": "No"
     }
   }
 }

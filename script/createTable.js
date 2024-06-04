@@ -7,10 +7,10 @@ export function createTableFromJson(data) {
   tableContainer.innerHTML = ''; // Clear any existing content
 
   for (const category in data) {
-    
+
     // Create table
     const table = document.createElement('table');
-    
+
     // Create and append category header
     const categoryHeader = document.createElement('caption');
     categoryHeader.textContent = category;
@@ -41,6 +41,9 @@ export function createTableFromJson(data) {
 
       const courseTitleCell = document.createElement('td');
       courseTitleCell.textContent = courseData.courseTitle;
+      courseTitleCell.setAttribute('data-upperdiv', courseData.upperDivision);
+
+
       row.appendChild(courseTitleCell);
 
       const equivalentCell = document.createElement('td');
