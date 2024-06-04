@@ -41,7 +41,8 @@ function getSelectedValue() {
 export function updateCompletedCredits() {
   const oldCatalog = 120
   const newCatalog = 90
-  const { totalCredits, upperDivCredit } = calculateCompletedCredits();
+  let { totalCredits, upperDivCredit } = calculateCompletedCredits();
+  console.log(totalCredits)
   const creditsDisplay = document.getElementById('total-credits');
   const upperDiv = document.getElementById('upperDivCredit');
   const leftOnOld = document.getElementById('old-catalog');
