@@ -186,6 +186,15 @@
       "credit": "1.5",
       "upperDivision": "Yes"
     }
+  },  
+  "Internship": {
+    "car 299": {
+      "courseCode": "CAR 299",
+      "courseTitle": "Internship",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "Yes"
+    }
   },
   "Religion": {
     "rel200": {

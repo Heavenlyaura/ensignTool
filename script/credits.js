@@ -60,6 +60,8 @@ export function updateCompletedCredits() {
   }
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
+  localStorage.setItem('totalCredit', totalCredits);
+  console.log(totalCredits)
 
   upperDiv.textContent = `Upper Division Credits: ${upperDivCredit}/30`
   creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;

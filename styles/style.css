@@ -243,7 +243,14 @@ form label {
 .uncompleted ul li {
   padding: .5rem;
 }
-
+.uncompleteHead, .uncompleteBody {
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.uncompleteBody {
+  margin: 1rem 0;
+}
 @media (max-width: 900px) {
   .main {
     flex-direction: column-reverse;
