@@ -1,5 +1,5 @@
 {
-  "Technical Support Engineer": {
+  "Technical Support Engineer (Complete All)": {
     "it102": {
       "courseCode": "IT 102",
       "courseTitle": "PC Hardware Technician",
@@ -8,28 +8,28 @@
       },
       "credit": "3"
     },
-
+  
     "cs104": {
       "courseCode": "CS 104",
       "courseTitle": "Python Scripting",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it125": {
       "courseCode": "IT 125",
       "courseTitle": "Introduction to Information Technology",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it235": {
       "courseCode": "IT 235",
       "courseTitle": "Cloud Server Administration",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it255": {
       "courseCode": "IT 255",
       "courseTitle": "Networking Fundamentals",
@@ -37,35 +37,35 @@
       "credit": "3"
     }
   },
-  "IT Fundamentals ": {
+  "IT Fundamentals (Complete All)": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it160": {
       "courseCode": "IT 160",
       "courseTitle": "Cloud Computing Fundamentals",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it210": {
       "courseCode": "IT 210",
       "courseTitle": "Linux Fundamentals",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it316": {
       "courseCode": "IT 316",
       "courseTitle": "DevOps Scripting for IT Security",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it312": {
       "courseCode": "IT 312",
       "courseTitle": "Cybersecurity Fundamentals",
@@ -73,35 +73,35 @@
       "credit": "3"
     }
   },
-  "System Administration": {
+  "System Administration (Complete All)": {
     "it330": {
       "courseCode": "IT 330",
       "courseTitle": "Azure Technologies",
       "equivalent": {},
       "credit": "1"
     },
-
+  
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it340": {
       "courseCode": "IT 340",
       "courseTitle": "Business Intelligence Systems",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it350": {
       "courseCode": "IT 350",
       "courseTitle": "Network Configuration and Design",
       "equivalent": {},
       "credit": "3"
     },
-
+  
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
@@ -109,51 +109,7 @@
       "credit": "3"
     }
   },
-  "Religion": {
-    "rel200": {
-      "courseCode": "REL 200",
-      "courseTitle": "The Eternal Family",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel225": {
-      "courseCode": "REL 225",
-      "courseTitle": "Foundations of the Restoration",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel250": {
-      "courseCode": "REL 250",
-      "courseTitle": "Jesus Christ & His Everlasting Gospel",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel275": {
-      "courseCode": "REL 275",
-      "courseTitle": "Teachings of the Book of Mormon",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective1": {
-      "courseCode": "Religion Elective-1",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective2": {
-      "courseCode": "Religion Elective-2",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective3": {
-      "courseCode": "Religion Elective-3",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
-    }
-  },
-  "Composition": {
+  "Composition (Complete 2)": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -176,7 +132,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Quantitative Literacy": {
+  "Quantitative Literacy (Complete All)": {
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
@@ -185,7 +141,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions": {
+  "American Institutions (Complete All)": {
     "hist 175": {
       "courseCode": "HIST 175",
       "courseTitle": "History of Technology in the United States",
@@ -194,7 +150,7 @@
       "upperDivision": "No"
     }
   },
-  "Humanities": {
+  "Humanities (Complete All)": {
     "comm 122": {
       "courseCode": "COMM 122",
       "courseTitle": "Interpersonal Communications",
@@ -203,7 +159,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences": {
+  "Life Sciences (Complete All)": {
     "ls 303": {
       "courseCode": "LS 303",
       "courseTitle": "Knowledge of the Physical and Natural World",
@@ -212,7 +168,16 @@
       "upperDivision": "Yes"
     }
   },
-  "Capstone": {
+  "Career Success (Complete All)": {
+    "gs 170": {
+      "courseCode": "GS 170",
+      "courseTitle": "Career Developement",
+      "equivalent": {},
+      "credit": "1",
+      "upperDivision": "No"
+    }
+  },
+  "Capstone (Complete All)": {
     "ens 497": {
       "courseCode": "ENS 497",
       "courseTitle": "Disciple Leadership Capstone",
@@ -220,14 +185,74 @@
       "credit": "1.5",
       "upperDivision": "Yes"
     },
-    "comm 497": {
-      "courseCode": "COMM 497",
+    "it 497": {
+      "courseCode": "IT 497",
       "courseTitle": "Communication Capstone",
       "equivalent": {
-        "course1": "IT 497"
+        "course1": "COMM 497"
       },
       "credit": "1.5",
       "upperDivision": "Yes"
+    }
+  },  
+  "Internship (Complete All)": {
+    "car 299": {
+      "courseCode": "CAR 299",
+      "courseTitle": "Internship",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "Yes"
+    }
+  },
+  "Religion (Complete All)": {
+    "rel200": {
+      "courseCode": "REL 200",
+      "courseTitle": "The Eternal Family",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "rel225": {
+      "courseCode": "REL 225",
+      "courseTitle": "Foundations of the Restoration",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "rel250": {
+      "courseCode": "REL 250",
+      "courseTitle": "Jesus Christ & His Everlasting Gospel",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "rel275": {
+      "courseCode": "REL 275",
+      "courseTitle": "Teachings of the Book of Mormon",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "religionElective1": {
+      "courseCode": "Religion Elective-1",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "religionElective2": {
+      "courseCode": "Religion Elective-2",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
+    },
+    "religionElective3": {
+      "courseCode": "Religion Elective-3",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2",
+      "upperDivision": "No"
     }
   }
 }

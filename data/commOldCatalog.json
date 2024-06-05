@@ -1,5 +1,5 @@
 {
-  "Social Media Marketing": {
+  "Social Media Marketing (Complete All)": {
     "dm105": {
       "courseCode": "DM 105",
       "courseTitle": "Introduction to Digital Marketing",
@@ -61,7 +61,7 @@
       "upperDivision": "No"
     }
   },
-  "Communication Fundamentals": {
+  "Communication Fundamentals (Complete All)": {
     "dcc180": {
       "courseCode": "DCC 180",
       "courseTitle": "Fundamentals of Content Creation",
@@ -98,7 +98,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Communication Core ": {
+  "Communication Core (Complete All)": {
     "comm300": {
       "courseCode": "COMM 300",
       "courseTitle": "Communication Career Workshop",
@@ -135,7 +135,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition": {
+  "Composition (Complete All)": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -151,7 +151,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy": {
+  "Quantitative Literacy (Complete 1)": {
     "math252": {
       "courseCode": "MATH 252",
       "courseTitle": "Statistics",
@@ -171,7 +171,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions": {
+  "American Institutions (Complete All)": {
     "pols 110": {
       "courseCode": "POLS 110",
       "courseTitle": "American Government",
@@ -189,7 +189,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences": {
+  "Life Sciences (Complete All)": {
     "ls 103": {
       "courseCode": "LS 103",
       "courseTitle": "Nutrition and Health",
@@ -198,25 +198,39 @@
       "upperDivision": "No"
     }
   },
-  "Physical Science": {
+  "Physical Science (Complete 1)": {
     "geo 111": {
       "courseCode": "GEO 111",
       "courseTitle": "Physical Geology",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "No"
-    }
-  },
-  "Social Sciences": {
-    "soc 111": {
-      "courseCode": "SOC 111",
-      "courseTitle": "Introduction to Sociology",
+    },
+    "ps 120": {
+      "courseCode": "PS 120",
+      "courseTitle": "Introduction to Physicsal Geography",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "No"
+    },
+    "ps 130": {
+      "courseCode": "PS 130",
+      "courseTitle": "Introduction to Physical Science",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "No"
     }
   },
-  "Fine Arts": {
+  "Social Sciences (Complete All)": {
+    "econ 161": {
+      "courseCode": "ECON 161",
+      "courseTitle": "Microeconomics",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "No"
+    }
+  },
+  "Fine Arts (Complete All)": {
     "art 101": {
       "courseCode": "ART 101",
       "courseTitle": "Survey of Art History",
@@ -225,7 +239,7 @@
       "upperDivision": "No"
     }
   },
-  "College-wide Courses": {
+  "College & Career Success": {
     "bap 115": {
       "courseCode": "BAP 115",
       "courseTitle": "Excel and Introduction to Technology",
