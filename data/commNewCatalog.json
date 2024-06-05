@@ -1,5 +1,5 @@
 {
-  "Social Media Marketing": {
+  "Social Media Marketing (Complete All)": {
     "dm105": {
       "courseCode": "DM 105",
       "courseTitle": "Introduction to Digital Marketing",
@@ -36,7 +36,7 @@
       "upperDivision": "No"
     }
   },
-  "Communication Fundamentals ": {
+  "Communication Fundamentals (Complete All)": {
     "dcc180": {
       "courseCode": "DCC 180",
       "courseTitle": "Fundamentals of Content Creation",
@@ -73,7 +73,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Communication Core": {
+  "Communication Core (Complete All)": {
     "comm300": {
       "courseCode": "COMM 300",
       "courseTitle": "Communication Career Workshop",
@@ -110,7 +110,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition": {
+  "Composition (Complete 2)": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -133,7 +133,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Quantitative Literacy": {
+  "Quantitative Literacy (Complete All)": {
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
@@ -142,7 +142,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions": {
+  "American Institutions (Complete All)": {
     "hist 175": {
       "courseCode": "HIST 175",
       "courseTitle": "History of Technology in the United States",
@@ -151,7 +151,7 @@
       "upperDivision": "No"
     }
   },
-  "Humanities": {
+  "Humanities (Complete All)": {
     "comm 122": {
       "courseCode": "COMM 122",
       "courseTitle": "Interpersonal Communications",
@@ -160,7 +160,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences": {
+  "Life Sciences (Complete All)": {
     "ls 303": {
       "courseCode": "LS 303",
       "courseTitle": "Knowledge of the Physical and Natural World",
@@ -169,7 +169,16 @@
       "upperDivision": "Yes"
     }
   },
-  "Capstone": {
+  "Career Success (Complete All)": {
+    "gs 170": {
+      "courseCode": "GS 170",
+      "courseTitle": "Career Developement",
+      "equivalent": {},
+      "credit": "1",
+      "upperDivision": "No"
+    }
+  },
+  "Capstone (Complete All)": {
     "ens 497": {
       "courseCode": "ENS 497",
       "courseTitle": "Disciple Leadership Capstone",
@@ -187,7 +196,7 @@
       "upperDivision": "Yes"
     }
   },  
-  "Internship": {
+  "Internship (Complete All)": {
     "car 299": {
       "courseCode": "CAR 299",
       "courseTitle": "Internship",
@@ -196,7 +205,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Religion": {
+  "Religion (Complete All)": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",
