@@ -1,5 +1,5 @@
 {
-  "Technical Support Engineer": {
+  "Technical Support Engineer (Complete All)": {
     "cs105": {
       "courseCode": "CS 105",
       "courseTitle": "Introduction to Programming",
@@ -46,7 +46,7 @@
       "credit": "3"
     }
   },
-  "IT Fundamentals": {
+  "IT Fundamentals (Complete All)": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -92,7 +92,7 @@
       "upperDivision": "NO"
     }
   },
-  "System Administration": {
+  "System Administration (Complete All)": {
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
@@ -130,50 +130,6 @@
       "courseTitle": "Advanced Linux",
       "equivalent": {},
       "credit": "3"
-    }
-  },
-  "Religion": {
-    "rel200": {
-      "courseCode": "REL 200",
-      "courseTitle": "The Eternal Family",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel225": {
-      "courseCode": "REL 225",
-      "courseTitle": "Foundations of the Restoration",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel250": {
-      "courseCode": "REL 250",
-      "courseTitle": "Jesus Christ & His Everlasting Gospel",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "rel275": {
-      "courseCode": "REL 275",
-      "courseTitle": "Teachings of the Book of Mormon",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective1": {
-      "courseCode": "Religion Elective-1",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective2": {
-      "courseCode": "Religion Elective-2",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
-    },
-    "religionElective3": {
-      "courseCode": "Religion Elective-3",
-      "courseTitle": "Religion Course",
-      "equivalent": {},
-      "credit": "2"
     }
   },
   "Composition (Complete All)": {
@@ -303,6 +259,50 @@
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
+    }
+  },
+  "Religion": {
+    "rel200": {
+      "courseCode": "REL 200",
+      "courseTitle": "The Eternal Family",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel225": {
+      "courseCode": "REL 225",
+      "courseTitle": "Foundations of the Restoration",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel250": {
+      "courseCode": "REL 250",
+      "courseTitle": "Jesus Christ & His Everlasting Gospel",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "rel275": {
+      "courseCode": "REL 275",
+      "courseTitle": "Teachings of the Book of Mormon",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective1": {
+      "courseCode": "Religion Elective-1",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective2": {
+      "courseCode": "Religion Elective-2",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
+    },
+    "religionElective3": {
+      "courseCode": "Religion Elective-3",
+      "courseTitle": "Religion Course",
+      "equivalent": {},
+      "credit": "2"
     }
   }
 }
