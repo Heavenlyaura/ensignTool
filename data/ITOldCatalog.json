@@ -6,28 +6,32 @@
       "equivalent": {
         "course1": "CSPC 105"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "it102": {
       "courseCode": "IT 102",
       "courseTitle": "PC Hardware Technician",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "it125": {
       "courseCode": "IT 125",
       "courseTitle": "Introduction to Information Technology",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "it235": {
       "courseCode": "IT 235",
       "courseTitle": "Cloud Server Administration",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
 
     "gs170": {
@@ -36,14 +40,16 @@
       "equivalent": {
         "course1": "CAR 201P"
       },
-      "credit": "1"
+      "credit": "1",
+      "upperDivision": "No"
     },
 
     "it255": {
       "courseCode": "IT 255",
       "courseTitle": "Networking Fundamentals",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     }
   },
   "IT Fundamentals (Complete All)": {
@@ -53,7 +59,7 @@
       "equivalent": {},
       "credit": "3",
       "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "No"
     },
 
     "it160": {
@@ -62,7 +68,7 @@
       "equivalent": {},
       "credit": "3",
       "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "No"
     },
 
     "it210": {
@@ -71,7 +77,7 @@
       "equivalent": {},
       "credit": "3",
       "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "No"
     },
 
     "it280": {
@@ -80,7 +86,7 @@
       "equivalent": {},
       "credit": "3",
       "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "No"
     },
 
     "it312": {
@@ -89,7 +95,7 @@
       "equivalent": {},
       "credit": "3",
       "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "No"
     }
   },
   "System Administration (Complete All)": {
@@ -98,15 +104,15 @@
       "courseTitle": "AWS Cloud Practitioner",
       "equivalent": {},
       "credit": "1",
-      "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "Yes"
     },
 
     "it340": {
       "courseCode": "IT 340",
       "courseTitle": "Business Intelligence",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
 
     "it350": {
@@ -114,22 +120,23 @@
       "courseTitle": "Network Configuration and Design",
       "equivalent": {},
       "credit": "3",
-      "completed": "NO",
-      "upperDivision": "NO"
+      "upperDivision": "Yes"
     },
 
     "it360": {
       "courseCode": "IT 360",
       "courseTitle": "Cloud Integration",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
 
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
   "Composition (Complete All)": {
