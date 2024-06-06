@@ -61,16 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         })
       });
-
-      // alternative.style.display = 'none'
-      // updateCompletedCredits()
     }
   })
   degreeOptions.forEach(degree => {
     degree.addEventListener('click', async () => {
       degree.disabled = true;
-      // const stored = localStorage.getItem('notCompleted')
-      // console.log(stored)
       let degreeName = degree.value;
       if (degreeName === "Communication") {
         const commOldData = await getCommOld();

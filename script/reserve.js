@@ -17,7 +17,6 @@ export function calculateCompletedCredits() {
 }
 
 export function updateCompletedCredits(credit=0) {
-  console.log('inside',credit)
   let totalCredits
   // totalCredits = calculateCompletedCredits(); // Update total credits dynamically
   if (calculateCompletedCredits()) {
@@ -25,7 +24,6 @@ export function updateCompletedCredits(credit=0) {
   } else {
     total.push(parseInt(credit));
   }
-  console.log(total)
   const creditsDisplay = document.getElementById('total-credits');
   creditsDisplay.textContent = `Total Completed Credits: ${total.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
   }`;
