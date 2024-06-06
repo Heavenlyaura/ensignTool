@@ -109,7 +109,7 @@
       "credit": "3"
     }
   },
-  "Composition (Complete 2)": {
+  "Composition (Complete All)": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -120,23 +120,20 @@
     "eng102": {
       "courseCode": "ENG 102",
       "courseTitle": "Intermediate College Writing",
-      "equivalent": {},
+      "equivalent": {
+        "course1": "ENG 301"
+      },
       "credit": "3",
       "upperDivision": "No"
-    },
-    "eng301": {
-      "courseCode": "ENG 301",
-      "courseTitle": "Technical Writing",
-      "equivalent": {},
-      "credit": "3",
-      "upperDivision": "Yes"
     }
   },
   "Quantitative Literacy (Complete All)": {
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
-      "equivalent": {},
+      "equivalent": {
+        "course1": "MATH 107 or Greater"
+      },
       "credit": "3",
       "upperDivision": "No"
     }
