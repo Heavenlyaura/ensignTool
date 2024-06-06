@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       totalCredits += parseInt(courseCredits)
       const parentRow = button.parentElement
-      upperDiv.textContent = `Upper Division: ${upperDivCredit}`
-      gradTotal.textContent = `Total: ${totalCredits}`
+      upperDiv.textContent = `Upper Division: ${upperDivCredit}/30`
+      gradTotal.textContent = `Total: ${totalCredits}/90`
       parentRow.remove()
     })
   });
