@@ -6,35 +6,40 @@
       "equivalent": {
         "course1": "CSPC 105"
       },
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "cs104": {
       "courseCode": "CS 104",
       "courseTitle": "Python Scripting",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it125": {
       "courseCode": "IT 125",
       "courseTitle": "Introduction to Information Technology",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it235": {
       "courseCode": "IT 235",
       "courseTitle": "Cloud Server Administration",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it255": {
       "courseCode": "IT 255",
       "courseTitle": "Networking Fundamentals",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     }
   },
   "IT Fundamentals (Complete All)": {
@@ -42,35 +47,40 @@
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it160": {
       "courseCode": "IT 160",
       "courseTitle": "Cloud Computing Fundamentals",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it210": {
       "courseCode": "IT 210",
       "courseTitle": "Linux Fundamentals",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "No"
     },
   
     "it316": {
       "courseCode": "IT 316",
       "courseTitle": "DevOps Scripting for IT Security",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
   
     "it312": {
       "courseCode": "IT 312",
       "courseTitle": "Cybersecurity Fundamentals",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
   "System Administration (Complete All)": {
@@ -78,35 +88,40 @@
       "courseCode": "IT 330",
       "courseTitle": "Azure Technologies",
       "equivalent": {},
-      "credit": "1"
+      "credit": "1",
+      "upperDivision": "Yes"
     },
   
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
   
     "it340": {
       "courseCode": "IT 340",
       "courseTitle": "Business Intelligence Systems",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
   
     "it350": {
       "courseCode": "IT 350",
       "courseTitle": "Network Configuration and Design",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     },
   
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
       "equivalent": {},
-      "credit": "3"
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
   "Composition (Complete All)": {
