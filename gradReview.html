@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Ensign College | Analysis Tool</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Ensign College | Analysis Tool</title>
+</head>
+
 <body>
   <header>
     <nav>
@@ -15,18 +17,36 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <h4>Uncompleted Courses</h4>
     <div class="uncompleted">
-      
+
     </div>
-    <h3 class="grad-total"></h3>
-    <button id="finish">Finish</button>
+    <div class="addCourseSetion">
+      <div class="addCourseInput">
+        <select id="substitution-dropdown">
+          <option value="">Add Upper-Division</option>
+        </select>
+        <input type="text" id="course-code-input" placeholder="Course Code">
+        <input type="text" id="credits-input" placeholder="Credits">
+      </div>
+      <button id="add-course-button">Add Course</button>
+    </div>
+    <div class="displayInfo">
+      <h3 class="grad-total"></h3>
+      <h3 class="upper-div"></h3>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="finish">
+      <button id="finish">Finish Analysis</button>
+    </div>
     <div class="completeAnalysis">
       <h3 class="credit-saved"></h3>
     </div>
   </main>
   <script src="script/gradReview.js"></script>
 </body>
-</html>  
+
+</html>

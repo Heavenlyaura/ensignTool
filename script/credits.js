@@ -11,7 +11,6 @@ export function calculateCompletedCredits() {
   selectElements.forEach(select => {
     if (select.value === 'Yes') {
       const creditCell = select.closest('tr').querySelector('.credit-cell');
-      console.log(creditCell.textContent)
       if (creditCell && !isNaN(parseInt(creditCell.textContent))) { // Check if creditCell exists and is a valid number
         totalCredits += parseInt(creditCell.textContent);
         const courseCode = select.closest('tr').querySelector('td');
@@ -42,7 +41,6 @@ export function updateCompletedCredits() {
   const oldCatalog = 120
   const newCatalog = 90
   let { totalCredits, upperDivCredit } = calculateCompletedCredits();
-  console.log(totalCredits)
   const creditsDisplay = document.getElementById('total-credits');
   const upperDiv = document.getElementById('upperDivCredit');
   const leftOnOld = document.getElementById('old-catalog');
@@ -61,7 +59,7 @@ export function updateCompletedCredits() {
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
   localStorage.setItem('totalCredit', totalCredits);
-  console.log(totalCredits)
+  localStorage.setItem('upperDivCredit', upperDivCredit);
 
   upperDiv.textContent = `Upper Division Credits: ${upperDivCredit}/30`
   creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;
@@ -78,7 +76,6 @@ export function storeNotCompletedCourses() {
     const tables = tableContainer.querySelectorAll('table')
     tables.forEach((table) => {
       const caption = table.querySelector('caption').textContent
-      console.log(caption)
       const rows = table.querySelectorAll('tr')
       rows.forEach((row, index) => {
         // Skip the header
@@ -91,10 +88,10 @@ export function storeNotCompletedCourses() {
             const select = completedCell.querySelector('select')
             if (select && select.value !== 'Yes') {
               const courseCode = cells[0].textContent
+              const upperDiv = cells[0].getAttribute('data-upperDiv')
               const courseTitle = cells[1].textContent
               const creditCell = cells[3].textContent
-              const courseData = { caption, courseCode, courseTitle, creditCell };
-              console.log(courseData)
+              const courseData = { caption, courseCode, courseTitle, creditCell, upperDiv };
               notCompletedCourses.push(courseData)
             }
           }
@@ -122,7 +119,6 @@ export function storeNotCompletedCourses() {
   //     const courseCode = select.closest('tr').querySelector('td:first-child').textContent;
   //     const courseTitle = select.closest('tr').querySelector('td:nth-child(2)').textContent;
   //     const courseData = { courseCode, courseTitle, creditCell };
-  //     console.log(courseCode, creditCell, courseTitle)
   //     notCompletedCourses.push(courseData);
   //   }
   // });

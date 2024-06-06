@@ -51,14 +51,18 @@
       </div>
       <div id="table-container"></div>
       <div class="footer-section">
-        <select id="substitution-dropdown">
-          <option value="">Select a course to substitute</option>
-        </select>
-        <input type="text" id="course-code-input" placeholder="Course Code">
-        <input type="text" id="credits-input" placeholder="Credits">
-        <label for="UpperDivision">UpperDivision?</label>
-        <input type="checkbox" value="Yes" name="UpperDivision" id="UpperDivisionCheck">
-        <button id="add-course-button">Add Course</button>
+        <div class="addCourseSetion">
+          <div class="addCourseInput">
+            <select id="substitution-dropdown">
+              <option value="">Select a course to substitute</option>
+            </select>
+            <input type="text" id="course-code-input" placeholder="Course Code">
+            <input type="text" id="credits-input" placeholder="Credits">
+            <label for="UpperDivision">UpperDivision?</label>
+            <input type="checkbox" value="Yes" name="UpperDivision" id="UpperDivisionCheck">
+          </div>
+          <button id="add-course-button">Add Course</button>
+        </div>
         <div class="add-course-table">
           <table id="added-courses-table">
             <thead>
@@ -74,15 +78,17 @@
             </tbody>
           </table>
         </div>
+       <div class="creditTotal">
         <h3 id="upperDivCredit">Upper Division Credits: 0/30</h3>
         <h3 id="total-credits">Total Completed Credits: 0</h3>
+       </div>
         <div class="div">
-          <input type="submit" value="Next" id="next">
+         <button id="next">Next</button>
         </div>
         <div class="analysis">
           <h3 id="old-catalog">Credit left on Old Catalog: 0</h3>
           <h3 id="new-catalog">Credit left on New Catalog: 0</h3>
-          <h3 id="saved">Credits Saved: 0</h3> 
+          <h3 id="saved">Credits Saved: 0</h3>
           <P>30 UPPER DIVISION credits is required with 15 in residency</P>
           <a target="_blank" href="gradReview.html">View Graduation Review</a>
         </div>
