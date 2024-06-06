@@ -148,7 +148,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy (Complete 1)": {
+  "Quantitative Literacy (Complete All)": {
     "math252": {
       "courseCode": "MATH 252",
       "courseTitle": "Statistics",
@@ -156,15 +156,6 @@
         "course1": "MATH 108"
       },
       "credit": "3",
-      "upperDivision": "No"
-    },
-    "math 108": {
-      "courseCode": "MATH 108",
-      "courseTitle": "Math for the Real World",
-      "equivalent": {
-        "course2": "MATH 252"
-      },
-      "credit": "4",
       "upperDivision": "No"
     }
   },
@@ -195,25 +186,14 @@
       "upperDivision": "No"
     }
   },
-  "Physical Science (Complete 1)": {
+  "Physical Science (Complete All)": {
     "geo 111": {
       "courseCode": "GEO 111",
       "courseTitle": "Physical Geology",
-      "equivalent": {},
-      "credit": "3",
-      "upperDivision": "No"
-    },
-    "ps 120": {
-      "courseCode": "PS 120",
-      "courseTitle": "Introduction to Physicsal Geography",
-      "equivalent": {},
-      "credit": "3",
-      "upperDivision": "No"
-    },
-    "ps 130": {
-      "courseCode": "PS 130",
-      "courseTitle": "Introduction to Physical Science",
-      "equivalent": {},
+      "equivalent": {
+        "course1": "PS 120",
+        "course2": "PS 130"
+      },
       "credit": "3",
       "upperDivision": "No"
     }
