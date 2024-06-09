@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('add-course-button').addEventListener('click', () => {
     const courseCodeInput = document.getElementById('course-code-input');
     const creditsInput = document.getElementById('credits-input');
-    const upperDiv = document.getElementById('UpperDivisionCheck');
+    const addUpperDiv = document.getElementById('UpperDivisionCheck');
     const courseCode = courseCodeInput.value.trim();
     const credits = parseInt(creditsInput.value.trim());
 
@@ -34,14 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
         addCourseToTable(courseCode, credits);
       }
 
-      if (upperDiv.checked) {
+      if (addUpperDiv.checked) {
         updateCompletedCredits(credits)
       }
-
       // Reset input fields
       courseCodeInput.value = '';
       creditsInput.value = '';
-      upperDiv.checked = false
+      addUpperDiv.checked = false
     } else {
       alert("Please fill out all fields correctly.");
     }
