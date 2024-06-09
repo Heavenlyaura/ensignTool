@@ -74,13 +74,6 @@
     }
   },
   "Communication Core (Complete All)": {
-    "comm300": {
-      "courseCode": "COMM 300",
-      "courseTitle": "Communication Career Workshop",
-      "equivalent": {},
-      "credit": "1",
-      "upperDivision": "Yes"
-    },
     "comm350": {
       "courseCode": "COMM 350",
       "courseTitle": "Communication Research Methods",
@@ -108,6 +101,13 @@
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
+    },
+    "comm390": {
+      "courseCode": "COMM 390",
+      "courseTitle": "Intercultural Communications",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "Yes"
     }
   },
   "Composition (Complete All)": {
@@ -118,11 +118,12 @@
       "credit": "3",
       "upperDivision": "No"
     },
-    "eng102": {
-      "courseCode": "ENG 102",
+    "eng201": {
+      "courseCode": "ENG 201",
       "courseTitle": "Intermediate College Writing",
       "equivalent": {
-        "course1": "ENG 301"
+        "course1": "ENG 301",
+        "course2": "BUS 301"
       },
       "credit": "3",
       "upperDivision": "No"
@@ -166,10 +167,17 @@
       "upperDivision": "Yes"
     }
   },
-  "Career Success (Complete All)": {
-    "gs 170": {
+  "Career Success/Professionalism (Complete All)": {
+    "gs170": {
       "courseCode": "GS 170",
       "courseTitle": "Career Developement",
+      "equivalent": {},
+      "credit": "1",
+      "upperDivision": "No"
+    },
+    "bap115": {
+      "courseCode": "BAP 115",
+      "courseTitle": "BExcel and Introduction to Technology",
       "equivalent": {},
       "credit": "1",
       "upperDivision": "No"
@@ -194,7 +202,7 @@
     }
   },
   "Internship (Complete All)": {
-    "car 299": {
+    "car299": {
       "courseCode": "CAR 299",
       "courseTitle": "Internship",
       "equivalent": {},

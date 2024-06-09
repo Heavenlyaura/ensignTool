@@ -42,7 +42,7 @@
       "upperDivision": "No"
     }
   },
-  "IT Fundamentals (Complete All)": {
+  "IT Professional (Complete All)": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -67,23 +67,30 @@
       "upperDivision": "No"
     },
   
-    "it316": {
+    "it312": {
       "courseCode": "IT 316",
-      "courseTitle": "DevOps Scripting for IT Security",
+      "courseTitle": "Cybersecurity Foundations",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
     },
   
-    "it312": {
+    "it350": {
       "courseCode": "IT 312",
-      "courseTitle": "Cybersecurity Fundamentals",
+      "courseTitle": "Network Configuration & Design",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
     }
   },
   "System Administration (Complete All)": {
+    "it316": {
+      "courseCode": "IT 316",
+      "courseTitle": "Scripting for Security Operations",
+      "equivalent": {},
+      "credit": "3",
+      "upperDivision": "Yes"
+    },
     "it330": {
       "courseCode": "IT 330",
       "courseTitle": "Azure Technologies",
@@ -106,16 +113,7 @@
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
-    },
-  
-    "it350": {
-      "courseCode": "IT 350",
-      "courseTitle": "Network Configuration and Design",
-      "equivalent": {},
-      "credit": "3",
-      "upperDivision": "Yes"
-    },
-  
+    },  
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
@@ -132,11 +130,12 @@
       "credit": "3",
       "upperDivision": "No"
     },
-    "eng102": {
-      "courseCode": "ENG 102",
+    "eng201": {
+      "courseCode": "ENG 201",
       "courseTitle": "Intermediate College Writing",
       "equivalent": {
-        "course1": "ENG 301"
+        "course1": "ENG 301",
+        "course2": "BUS 302"
       },
       "credit": "3",
       "upperDivision": "No"
@@ -180,10 +179,17 @@
       "upperDivision": "Yes"
     }
   },
-  "Career Success (Complete All)": {
-    "gs 170": {
+  "Career Success/Professionalism (Complete All)": {
+    "gs170": {
       "courseCode": "GS 170",
       "courseTitle": "Career Developement",
+      "equivalent": {},
+      "credit": "1",
+      "upperDivision": "No"
+    },
+    "bap115": {
+      "courseCode": "BAP 115",
+      "courseTitle": "BExcel and Introduction to Technology",
       "equivalent": {},
       "credit": "1",
       "upperDivision": "No"
@@ -208,9 +214,9 @@
     }
   },  
   "Internship (Complete All)": {
-    "car 299": {
-      "courseCode": "CAR 299",
-      "courseTitle": "Internship",
+    "car 398": {
+      "courseCode": "CAR 398",
+      "courseTitle": "Project Based Internship",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
