@@ -77,7 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!(totalCredits < 90) && !(upperDivCredit < 30)) {
       completeAnalysisDiv.style.display = 'block'
       let creditSaved = oldDegree - totalCredits
-      creditSavedh3.textContent = `CREDIT SAVED: ${creditSaved}`
+      if (totalCredits > 120) {
+        creditSavedh3.style.color = 'red'
+        creditSavedh3.textContent = `CREDIT LOST: ${creditSaved}`
+      } else {
+        creditSavedh3.textContent = `CREDIT SAVED: ${creditSaved}`
+      }
     } else {
       alert('Credits not up to requirement')
     }
