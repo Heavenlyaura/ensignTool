@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let totalCredits = parseInt(localStorage.getItem('totalCredit'))
   let upperDivCredit = parseInt(localStorage.getItem('upperDivCredit'))
 
-  
-  
+
+
   if (isNaN(totalCredits)) {
     totalCredits = 0
   }
@@ -74,11 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
   finish.addEventListener('click', () => {
-    completeAnalysisDiv.style.display = 'block'
-    let creditSaved = oldDegree - totalCredits
-    creditSavedh3.textContent = `CREDIT SAVED: ${creditSaved}`
-
+    if (!(totalCredits < 90) && !(upperDivCredit < 30)) {
+      completeAnalysisDiv.style.display = 'block'
+      let creditSaved = oldDegree - totalCredits
+      creditSavedh3.textContent = `CREDIT SAVED: ${creditSaved}`
+    } else {
+      alert('Credits not up to requirement')
+    }
   })
+
+
 
 
 

@@ -92,7 +92,7 @@ export function addCourseToTable(courseCode, credits) {
   row.insertCell(4).textContent = 'Yes'; // Automatically mark as completed
 
   // Automatically update total credits when a course is added
-  updateCompletedCredits(parseInt(credits));
+  updateCompletedCredits();
 
   // Update the substitution dropdown
   populateSubstitutionDropdown();
@@ -142,5 +142,5 @@ export function substituteCourse(newCourseCode, newCredits, substituteCourseCode
   addCourseToTable(newCourseCode, newCredits);
 
   // Update the total credits
-  updateCompletedCredits(parseInt(newCredits) - oldCredits);
+  updateCompletedCredits();
 }

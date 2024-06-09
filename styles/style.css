@@ -318,6 +318,10 @@ form label {
   cursor: pointer;
   margin: 0 auto;
 }
+caption {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
 
 @media (max-width: 900px) {
   .main {

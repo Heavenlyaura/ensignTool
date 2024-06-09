@@ -1,8 +1,8 @@
-export function calculateCompletedCredits() {
+export function calculateCompletedCredits(upperDivParam) {
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
-  let upperDivCredit = 0
+  let upperDivCredit = upperDivParam || 0;
   const addedCoursesTable = document.getElementById('added-courses-table');
   const addedCreditCells = addedCoursesTable.querySelectorAll('.credit-cell');
   // const upperDivCheck = document.querySelector('#UpperDivisionCheck')
@@ -37,10 +37,11 @@ function getSelectedValue() {
   return selectedValue
 }
 
-export function updateCompletedCredits() {
+export function updateCompletedCredits(upperDivParam) {
+
   const oldCatalog = 120
   const newCatalog = 90
-  let { totalCredits, upperDivCredit } = calculateCompletedCredits();
+  let { totalCredits, upperDivCredit } = calculateCompletedCredits(upperDivParam);
   const creditsDisplay = document.getElementById('total-credits');
   const upperDiv = document.getElementById('upperDivCredit');
   const leftOnOld = document.getElementById('old-catalog');
