@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
           restoreSelectedValues(selectedValues);
           analysis.style.display = 'block'
           storeNotCompletedCourses()
+          saveAddCourseTable()
         });
       }
       footerSection.style.display = 'block'
