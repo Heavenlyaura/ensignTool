@@ -78,13 +78,20 @@ export function createTableFromJson(data) {
   populateSubstitutionDropdown(); // Populate substitution dropdown after creating tables
 }
 
-export function addCourseToTable(courseCode, credits) {
+export function addCourseToTable(courseCode, credits, checked) {
   const table = document.getElementById('added-courses-table');
   const tbody = table.querySelector('tbody');
   const row = tbody.insertRow();
 
   // Insert cells to match the columns of the initial table
-  row.insertCell(0).textContent = courseCode;
+  let addCourseCode = row.insertCell(0)
+  addCourseCode.textContent = courseCode
+  addCourseCode.classList.add('course-code')
+  if (checked) {
+    addCourseCode.setAttribute('data-upperdiv', "Yes")
+  } else {
+    addCourseCode.setAttribute('data-upperdiv', "No")
+  }
   row.insertCell(1).textContent = ''; // No course title for added courses
   row.insertCell(2).textContent = ''; // No equivalent courses for added courses
   const creditCell = row.insertCell(3); // Insert a reference to the cell containing credits
@@ -124,7 +131,7 @@ function populateSubstitutionDropdown() {
   });
 }
 
-export function substituteCourse(newCourseCode, newCredits, substituteCourseCode) {
+export function substituteCourse(newCourseCode, newCredits, substituteCourseCode, checked) {
   // Find and remove the substituted course from the table
   const tables = [document.getElementById('table-container'), document.getElementById('added-courses-table')];
   let oldCredits = 0;

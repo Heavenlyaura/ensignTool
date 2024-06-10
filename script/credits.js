@@ -2,16 +2,14 @@ export function calculateCompletedCredits(upperDivParam) {
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
-  let upperDivCredit = upperDivParam || 0;
+  let upperDivCredit = 0;
   const addedCoursesTable = document.getElementById('added-courses-table');
   const addedCreditCells = addedCoursesTable.querySelectorAll('.credit-cell');
-  // const upperDivCheck = document.querySelector('#UpperDivisionCheck')
-  // const addedCreditCell = document.querySelector('#credits-input')
 
   selectElements.forEach(select => {
     if (select.value === 'Yes') {
       const creditCell = select.closest('tr').querySelector('.credit-cell');
-      if (creditCell && !isNaN(parseInt(creditCell.textContent))) { // Check if creditCell exists and is a valid number
+      if (creditCell && !isNaN(parseInt(creditCell.textContent))) {
         totalCredits += parseInt(creditCell.textContent);
         const courseCode = select.closest('tr').querySelector('td');
         let upperDivision = courseCode.getAttribute('data-upperDiv')
@@ -26,6 +24,11 @@ export function calculateCompletedCredits(upperDivParam) {
     const creditValue = parseInt(creditCell.textContent);
     if (!isNaN(creditValue)) { // Ensure the value is a valid number
       totalCredits += creditValue;
+      const courseCode = creditCell.closest('tr').querySelector('td');
+      let upperDivision = courseCode.getAttribute('data-upperDiv')
+      if (upperDivision == 'Yes') {
+        upperDivCredit += parseInt(creditCell.textContent)
+      }
     }
   });
   return { totalCredits, upperDivCredit };

@@ -28,15 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (courseCode !== '' && !isNaN(credits)) {
       const substitutionDropdown = document.getElementById('substitution-dropdown');
       const substitutedValue = substitutionDropdown.value
+      let checked = false
+      if (addUpperDiv.checked) {
+        checked = true
+      }
       if (substitutedValue) {
-        substituteCourse(courseCode, credits, substitutedValue);
+        substituteCourse(courseCode, credits, substitutedValue, checked);
       } else {
-        addCourseToTable(courseCode, credits);
+        addCourseToTable(courseCode, credits, checked);
       }
 
-      if (addUpperDiv.checked) {
-        updateCompletedCredits(credits)
-      }
       // Reset input fields
       courseCodeInput.value = '';
       creditsInput.value = '';
