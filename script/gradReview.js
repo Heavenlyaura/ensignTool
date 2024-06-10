@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const uncompletedDiv = document.querySelector('.uncompleted');
   const storedCourses = localStorage.getItem('notCompleted')
   const uncompletedCourses = JSON.parse(storedCourses)
+  const addedCourseStrList = localStorage.getItem('addedCourseList')
+  const addedCourses = JSON.parse(addedCourseStrList)
   const gradTotal = document.querySelector('.grad-total')
   const upperDiv = document.querySelector('.upper-div')
   const completeAnalysisDiv = document.querySelector('.completeAnalysis')
@@ -10,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const oldDegree = 120
   let totalCredits = parseInt(localStorage.getItem('totalCredit'))
   let upperDivCredit = parseInt(localStorage.getItem('upperDivCredit'))
-
-
 
   if (isNaN(totalCredits)) {
     totalCredits = 0
@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   gradTotal.textContent = `Total: ${totalCredits}/90`
 
   completeAnalysisDiv.style.display = 'none'
+
+  const displayCourses = uncompletedCourses.filter(course => !addedCourses.includes(course.courseCode))
+
+  console.log(displayCourses)
 
   if (storedCourses) {
     let requireAllCourses = [
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <h4 class="added">Add</h4>
     </div>
     <div>`
-    uncompletedCourses.forEach(course => {
+    displayCourses.forEach(course => {
       let isRequired = requireAllCourses.includes(course.caption);
       let courseClass = isRequired ? 'required-course' : '';
 

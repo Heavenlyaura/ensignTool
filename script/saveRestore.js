@@ -36,11 +36,19 @@ export function restoreSelectedValues(selectedValues) {
         select.disabled = true; // Disable the select element
       }
     });
-    // select.value = selectedValues[courseId];
-
-    // // Find the corresponding table row and update completed status
-    // const tableRow = select.closest('tr');
-    // const completedCell = tableRow.querySelector('td:last-child');
-    // completedCell.textContent = selectedValues[courseId];
   }
+}
+
+export function saveAddCourseTable() {
+  const addCourseTable = document.querySelector('#added-courses-table')
+  const courseCodeArr = []
+  const rows = addCourseTable.querySelectorAll('tr')
+  rows.forEach((row, index) => {
+    if (index > 0) {
+      let cell = row.querySelector('td:first-child')
+      courseCodeArr.push(cell.textContent)
+    }
+  });
+  const stringList = JSON.stringify(courseCodeArr)
+  localStorage.setItem('addedCourseList', stringList)
 }

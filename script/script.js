@@ -1,7 +1,7 @@
 import { getCommNew, getCommOld, getItNew, getItOld } from "./fetchData.js";
 import { createTableFromJson, addCourseToTable, substituteCourse } from "./createTable.js"
 import { storeNotCompletedCourses, updateCompletedCredits } from "./credits.js";
-import { saveSelectedValues, restoreSelectedValues } from "./saveRestore.js";
+import { saveSelectedValues, restoreSelectedValues, saveAddCourseTable } from "./saveRestore.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   localStorage.clear();
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const courseCodeInput = document.getElementById('course-code-input');
     const creditsInput = document.getElementById('credits-input');
     const addUpperDiv = document.getElementById('UpperDivisionCheck');
-    const courseCode = courseCodeInput.value.trim();
+    const courseCode = courseCodeInput.value.trim().toUpperCase();
     const credits = parseInt(creditsInput.value.trim());
 
     if (courseCode !== '' && !isNaN(credits)) {
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
           restoreSelectedValues(selectedValues);
           analysis.style.display = 'block'
           storeNotCompletedCourses()
+          saveAddCourseTable()
         });
       }
       else if (degreeName === "Information Technology") {
