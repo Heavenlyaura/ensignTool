@@ -74,7 +74,7 @@ export function storeNotCompletedCourses() {
   const notCompletedCourses = [];
 
   if (tableContainer) {
-    const tables = tableContainer.querySelectorAll('table')
+    const tables = document.querySelectorAll('table')
     tables.forEach((table) => {
       const caption = table.querySelector('caption').textContent
       const rows = table.querySelectorAll('tr')
@@ -82,19 +82,26 @@ export function storeNotCompletedCourses() {
         // Skip the header
         if (index > 0) {
           const cells = row.querySelectorAll('td')
+          const completeCells = row.querySelectorAll('.addComplete');
+
           if (cells.length > 0) {
-
             const completedCell = cells[cells.length - 1]
-
             const select = completedCell.querySelector('select')
+            const courseData = {}
             if (select && select.value !== 'Yes') {
               const courseCode = cells[0].textContent
               const upperDiv = cells[0].getAttribute('data-upperDiv')
               const courseTitle = cells[1].textContent
               const creditCell = cells[3].textContent
-              const courseData = { caption, courseCode, courseTitle, creditCell, upperDiv };
+              // const courseData = { caption, courseCode, courseTitle, creditCell, upperDiv };
+              courseData.caption = caption
+              courseData.courseCode = courseCode
+              courseData.courseTitle = courseTitle
+              courseData.creditCell = creditCell
+              courseData.upperDiv = upperDiv
               notCompletedCourses.push(courseData)
             }
+
           }
         }
       });

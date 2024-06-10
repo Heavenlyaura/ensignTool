@@ -80,7 +80,8 @@ export function createTableFromJson(data) {
 
 export function addCourseToTable(courseCode, credits) {
   const table = document.getElementById('added-courses-table');
-  const row = table.insertRow();
+  const tbody = table.querySelector('tbody');
+  const row = tbody.insertRow();
 
   // Insert cells to match the columns of the initial table
   row.insertCell(0).textContent = courseCode;
@@ -89,7 +90,9 @@ export function addCourseToTable(courseCode, credits) {
   const creditCell = row.insertCell(3); // Insert a reference to the cell containing credits
   creditCell.textContent = credits;
   creditCell.classList.add('credit-cell'); // Add the class 'credit-cell' to the cell containing credits
-  row.insertCell(4).textContent = 'Yes'; // Automatically mark as completed
+  let completedCell = row.insertCell(4);
+  completedCell.textContent = 'Yes'; // Automatically mark as completed
+  completedCell.classList.add('addComplete') // Automatically mark as completed
 
   // Automatically update total credits when a course is added
   updateCompletedCredits();
