@@ -277,8 +277,25 @@ form label {
 .uncompleteBody {
   margin: 1rem 0;
 }
-.required-course {
+.certificateCourses {
+  color: green;
+  font-weight: bold;
+}
+.religionCourses {
+  font-weight: bold;
+  color: darkblue;
+}
+.capstoneCourses {
+  font-weight: bold;
+  color: brown;
+}
+.internshipCourse {
+  font-weight: bold;
   color: red;
+}
+.generalEducation {
+  color: black;
+  font-weight: bold;
 }
 .displayInfo {
   position: fixed;
@@ -311,7 +328,7 @@ form label {
 .addGrad {
   width: 50px;
   height: 30px;
-  padding: .4rem;
+  padding: 0.4rem;
   border-radius: 5px;
   background-color: #006248;
   color: #fff;
@@ -321,6 +338,27 @@ form label {
 caption {
   font-size: 1.6rem;
   font-weight: bolder;
+}
+.legend {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white; /* Ensure the sticky element has a background color to make it visible */
+  z-index: 10; /* Optional: Increase z-index if there are overlapping elements */
+  border-bottom: #006248 2px solid;
+}
+.gradMain {
+  padding: 1rem;
+}
+#gradCourseCode,
+#gradCourseTitle {
+  text-align: left;
 }
 
 @media (max-width: 900px) {

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(displayCourses)
 
   if (storedCourses) {
-    let requireAllCourses = [
+    let certificateCourses = [
       'Social Media Marketing (Complete All)',
       'Communication Fundamentals (Complete All)',
       'Communication Core (Complete All)',
@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
       'IT Fundamentals (Complete All)',
       'System Administration (Complete All)'
     ];
+    let religionCourses = [
+      'Religion (Complete All)'
+    ]
+    let capstoneCourses = [
+      'Capstone (Complete All)'
+    ]
+    let internshipCourse = [
+      'Internship (Complete All)'
+    ]
+
 
     let uncompleted = `
     <div class="uncompleteHead"> 
@@ -47,16 +57,22 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <div>`
     displayCourses.forEach(course => {
-      let isRequired = requireAllCourses.includes(course.caption);
-      let courseClass = isRequired ? 'required-course' : '';
+      let isCertificate = certificateCourses.includes(course.caption);
+      let certificates = isCertificate ? 'certificateCourses' : '';
+      let isReligion = religionCourses.includes(course.caption)
+      let religions = isReligion ? 'religionCourses' : '';
+      let isCapstone = capstoneCourses.includes(course.caption)
+      let capstones = isCapstone ? 'capstoneCourses' : '';
+      let isInternship = internshipCourse.includes(course.caption)
+      let internships = isInternship ? 'internshipCourse' : '';
 
       uncompleted +=
-        `<span class="uncompleteBody ${courseClass}">
-      <p>${course.courseCode}</p>
-      <p>${course.courseTitle}</p>
-      <p>${course.creditCell}</p>
-      <button class="addGrad" data-course="${course.courseCode}" data-upperDiv=${course.upperDiv} data-credits="${course.creditCell}">Add</button>
-      </span>`
+        `<span class="uncompleteBody ${certificates} ${religions} ${capstones} ${internships}">
+        <p id="gradCourseCode">${course.courseCode}</p>
+        <p id="gradCourseTitle">${course.courseTitle}</p>
+        <p>${course.creditCell}</p>
+        <button class="addGrad" data-course="${course.courseCode}" data-upperDiv="${course.upperDiv}" data-credits="${course.creditCell}">Add</button>
+      </span>`;
 
     });
     uncompletedDiv.innerHTML = uncompleted
