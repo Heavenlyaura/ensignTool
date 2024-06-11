@@ -4,7 +4,7 @@
       "courseCode": "DM 105",
       "courseTitle": "Introduction to Digital Marketing",
       "equivalent": {
-        "course1": "DM 105",
+        "course1": "DMPC 105",
         "course2": "SMMBC 105"
       },
       "credit": "3",
@@ -45,7 +45,8 @@
       "courseCode": "GS 170",
       "courseTitle": "Career Development",
       "equivalent": {
-        "course1": "CAR 201P"
+        "course1": "CAR 201P",
+        "course2": "CAR 201"
       },
       "credit": "1",
       "upperDivision": "No"
@@ -166,7 +167,9 @@
     "pols 110": {
       "courseCode": "POLS 110",
       "courseTitle": "American Government",
-      "equivalent": {},
+      "equivalent": {
+        "course1": "HIST 175"
+      },
       "credit": "3",
       "upperDivision": "No"
     }
@@ -175,7 +178,9 @@
     "HUM 110": {
       "courseCode": "HUM 110",
       "courseTitle": "Foundation of Humanities",
-      "equivalent": {},
+      "equivalent": {
+        "course1": "COMM 122"
+      },
       "credit": "3",
       "upperDivision": "No"
     }
