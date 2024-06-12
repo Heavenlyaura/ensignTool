@@ -149,7 +149,7 @@ form label {
   width: 100px;
   padding: 1rem;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   border-radius: 1rem;
   background-color: #006248;
   color: #fff;
@@ -169,7 +169,7 @@ form label {
   border: 2px solid #006248;
   width: 80%;
   margin: 2rem auto;
-  height: 50vh;
+  height: 500px;
   padding: 1.5rem;
   border-radius: 1rem;
 }
@@ -230,18 +230,18 @@ form label {
 .creditTotal {
   text-align: center;
   position: fixed;
+  max-width: 1440px;
   bottom: 0;
   background-color: white;
   border: 2px solid #006248;
-  width: 100vw;
-  height: 9vh;
-  padding: 5px;
+  width: 100%;
+  padding: 1.5rem;
 }
 .analysis {
   margin: 2rem 0;
   background-color: #006248;
   color: white;
-  height: 30vh;
+  height: 300px;
   text-align: center;
 }
 .analysis h3 {
@@ -298,14 +298,14 @@ form label {
   font-weight: bold;
 }
 .displayInfo {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
-  background-color: #006248;
-  width: 100%;
-  color: white;
   text-align: center;
+  position: fixed;
+  max-width: 1440px;
+  bottom: 0;
+  background-color: #006248;
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
 }
 .finish {
   display: flex;
