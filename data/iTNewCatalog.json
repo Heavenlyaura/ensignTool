@@ -1,5 +1,5 @@
 {
-  "Technical Support Engineer (Complete All)": {
+  "Technical Support Engineer": {
     "it102": {
       "courseCode": "IT 102",
       "courseTitle": "PC Hardware Technician",
@@ -9,7 +9,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "cs104": {
       "courseCode": "CS 104",
       "courseTitle": "Python Scripting",
@@ -17,7 +16,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it125": {
       "courseCode": "IT 125",
       "courseTitle": "Introduction to Information Technology",
@@ -25,7 +23,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it235": {
       "courseCode": "IT 235",
       "courseTitle": "Cloud Server Administration",
@@ -33,7 +30,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it255": {
       "courseCode": "IT 255",
       "courseTitle": "Networking Fundamentals",
@@ -42,7 +38,7 @@
       "upperDivision": "No"
     }
   },
-  "IT Professional (Complete All)": {
+  "IT Professional": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -50,7 +46,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it160": {
       "courseCode": "IT 160",
       "courseTitle": "Cloud Computing Fundamentals",
@@ -58,7 +53,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it210": {
       "courseCode": "IT 210",
       "courseTitle": "Linux Fundamentals",
@@ -66,7 +60,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-  
     "it312": {
       "courseCode": "IT 316",
       "courseTitle": "Cybersecurity Foundations",
@@ -74,7 +67,6 @@
       "credit": "3",
       "upperDivision": "Yes"
     },
-  
     "it350": {
       "courseCode": "IT 312",
       "courseTitle": "Network Configuration & Design",
@@ -83,7 +75,7 @@
       "upperDivision": "Yes"
     }
   },
-  "System Administration (Complete All)": {
+  "System Administration": {
     "it316": {
       "courseCode": "IT 316",
       "courseTitle": "Scripting for Security Operations",
@@ -98,7 +90,6 @@
       "credit": "1",
       "upperDivision": "Yes"
     },
-  
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
@@ -106,14 +97,13 @@
       "credit": "3",
       "upperDivision": "Yes"
     },
-  
     "it340": {
       "courseCode": "IT 340",
       "courseTitle": "Business Intelligence Systems",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "Yes"
-    },  
+    },
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
@@ -122,7 +112,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition (Complete All)": {
+  "Composition": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -141,7 +131,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy (Complete All)": {
+  "Quantitative Literacy": {
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
@@ -152,7 +142,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions (Complete All)": {
+  "American Institutions": {
     "hist 175": {
       "courseCode": "HIST 175",
       "courseTitle": "History of Technology in the United States",
@@ -161,7 +151,7 @@
       "upperDivision": "No"
     }
   },
-  "Humanities (Complete All)": {
+  "Humanities": {
     "comm 122": {
       "courseCode": "COMM 122",
       "courseTitle": "Interpersonal Communications",
@@ -170,7 +160,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences (Complete All)": {
+  "Life Sciences": {
     "ls 303": {
       "courseCode": "LS 303",
       "courseTitle": "Knowledge of the Physical and Natural World",
@@ -179,7 +169,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Career Success/Professionalism (Complete All)": {
+  "Career Success/Professionalism": {
     "gs170": {
       "courseCode": "GS 170",
       "courseTitle": "Career Developement",
@@ -195,7 +185,7 @@
       "upperDivision": "No"
     }
   },
-  "Capstone (Complete All)": {
+  "Capstone": {
     "ens 497": {
       "courseCode": "ENS 497",
       "courseTitle": "Disciple Leadership Capstone",
@@ -212,8 +202,8 @@
       "credit": "1.5",
       "upperDivision": "Yes"
     }
-  },  
-  "Internship (Complete All)": {
+  },
+  "Internship": {
     "car 398": {
       "courseCode": "CAR 398",
       "courseTitle": "Project Based Internship",
@@ -222,7 +212,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Religion (Complete All)": {
+  "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",
