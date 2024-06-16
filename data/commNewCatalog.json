@@ -73,7 +73,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Communication Core (Complete All)": {
+  "Communication Core": {
     "comm350": {
       "courseCode": "COMM 350",
       "courseTitle": "Communication Research Methods",
@@ -110,7 +110,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition (Complete All)": {
+  "Composition": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -129,7 +129,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy (Complete All)": {
+  "Quantitative Literacy": {
     "math107": {
       "courseCode": "MATH 107",
       "courseTitle": "Quantitative Analysis and Personal Finance",
@@ -140,7 +140,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions (Complete All)": {
+  "American Institutions": {
     "hist 175": {
       "courseCode": "HIST 175",
       "courseTitle": "History of Technology in the United States",
@@ -149,7 +149,7 @@
       "upperDivision": "No"
     }
   },
-  "Humanities (Complete All)": {
+  "Humanities": {
     "comm 122": {
       "courseCode": "COMM 122",
       "courseTitle": "Interpersonal Communications",
@@ -158,7 +158,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences (Complete All)": {
+  "Life Sciences": {
     "ls 303": {
       "courseCode": "LS 303",
       "courseTitle": "Knowledge of the Physical and Natural World",
@@ -167,7 +167,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Career Success/Professionalism (Complete All)": {
+  "Career Success/Professionalism": {
     "gs170": {
       "courseCode": "GS 170",
       "courseTitle": "Career Developement",
@@ -183,7 +183,7 @@
       "upperDivision": "No"
     }
   },
-  "Capstone (Complete All)": {
+  "Capstone": {
     "ens 497": {
       "courseCode": "ENS 497",
       "courseTitle": "Disciple Leadership Capstone",
@@ -201,7 +201,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Internship (Complete All)": {
+  "Internship": {
     "car299": {
       "courseCode": "CAR 299",
       "courseTitle": "Internship",
@@ -210,7 +210,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Religion (Complete All)": {
+  "Religion": {
     "rel200": {
       "courseCode": "REL 200",
       "courseTitle": "The Eternal Family",

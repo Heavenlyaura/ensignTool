@@ -1,5 +1,5 @@
 {
-  "Technical Support Engineer (Complete All)": {
+  "Technical Support Engineer": {
     "cs105": {
       "courseCode": "CS 105",
       "courseTitle": "Introduction to Programming",
@@ -9,7 +9,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-
     "it102": {
       "courseCode": "IT 102",
       "courseTitle": "PC Hardware Technician",
@@ -17,7 +16,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-
     "it125": {
       "courseCode": "IT 125",
       "courseTitle": "Introduction to Information Technology",
@@ -25,7 +23,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-
     "it235": {
       "courseCode": "IT 235",
       "courseTitle": "Cloud Server Administration",
@@ -33,7 +30,6 @@
       "credit": "3",
       "upperDivision": "No"
     },
-
     "gs170": {
       "courseCode": "GS 170",
       "courseTitle": "Career Development",
@@ -43,7 +39,6 @@
       "credit": "1",
       "upperDivision": "No"
     },
-
     "it255": {
       "courseCode": "IT 255",
       "courseTitle": "Networking Fundamentals",
@@ -52,7 +47,7 @@
       "upperDivision": "No"
     }
   },
-  "IT Fundamentals (Complete All)": {
+  "IT Fundamentals": {
     "it143": {
       "courseCode": "IT 143",
       "courseTitle": "Database Design and Analysis",
@@ -61,7 +56,6 @@
       "completed": "NO",
       "upperDivision": "No"
     },
-
     "it160": {
       "courseCode": "IT 160",
       "courseTitle": "Cloud Computing Fundamentals",
@@ -70,7 +64,6 @@
       "completed": "NO",
       "upperDivision": "No"
     },
-
     "it210": {
       "courseCode": "IT 210",
       "courseTitle": "Linux Fundamentals",
@@ -79,7 +72,6 @@
       "completed": "NO",
       "upperDivision": "No"
     },
-
     "it280": {
       "courseCode": "IT 280",
       "courseTitle": "Python Programming",
@@ -88,7 +80,6 @@
       "completed": "NO",
       "upperDivision": "No"
     },
-
     "it312": {
       "courseCode": "IT 312",
       "courseTitle": "Cybersecurity Fundamentals",
@@ -98,7 +89,7 @@
       "upperDivision": "No"
     }
   },
-  "System Administration (Complete All)": {
+  "System Administration": {
     "it335": {
       "courseCode": "IT 335",
       "courseTitle": "AWS Cloud Practitioner",
@@ -106,7 +97,6 @@
       "credit": "1",
       "upperDivision": "Yes"
     },
-
     "it340": {
       "courseCode": "IT 340",
       "courseTitle": "Business Intelligence",
@@ -114,7 +104,6 @@
       "credit": "3",
       "upperDivision": "Yes"
     },
-
     "it350": {
       "courseCode": "IT 350",
       "courseTitle": "Network Configuration and Design",
@@ -122,7 +111,6 @@
       "credit": "3",
       "upperDivision": "Yes"
     },
-
     "it360": {
       "courseCode": "IT 360",
       "courseTitle": "Cloud Integration",
@@ -130,7 +118,6 @@
       "credit": "3",
       "upperDivision": "Yes"
     },
-
     "it370": {
       "courseCode": "IT 370",
       "courseTitle": "Advanced Linux",
@@ -139,7 +126,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition (Complete All)": {
+  "Composition ": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -155,7 +142,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy (Complete All)": {
+  "Quantitative Literacy": {
     "math252": {
       "courseCode": "MATH 252",
       "courseTitle": "Statistics",
@@ -166,7 +153,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions (Complete All)": {
+  "American Institutions": {
     "pols 110": {
       "courseCode": "POLS 110",
       "courseTitle": "American Government",
@@ -184,7 +171,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences (Complete All)": {
+  "Life Sciences": {
     "ls 103": {
       "courseCode": "LS 103",
       "courseTitle": "Nutrition and Health",
@@ -193,7 +180,7 @@
       "upperDivision": "No"
     }
   },
-  "Physical Science (Complete All)": {
+  "Physical Science": {
     "geo 111": {
       "courseCode": "GEO 111",
       "courseTitle": "Physical Geology",
@@ -205,7 +192,7 @@
       "upperDivision": "No"
     }
   },
-  "Social Sciences (Complete All)": {
+  "Social Sciences": {
     "econ 161": {
       "courseCode": "ECON 161",
       "courseTitle": "Microeconomics",
@@ -214,7 +201,7 @@
       "upperDivision": "No"
     }
   },
-  "Fine Arts (Complete All)": {
+  "Fine Arts": {
     "art 101": {
       "courseCode": "ART 101",
       "courseTitle": "Survey of Art History",

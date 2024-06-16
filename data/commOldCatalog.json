@@ -1,5 +1,5 @@
 {
-  "Social Media Marketing (Complete All)": {
+  "Social Media Marketing": {
     "dm105": {
       "courseCode": "DM 105",
       "courseTitle": "Introduction to Digital Marketing",
@@ -62,7 +62,7 @@
       "upperDivision": "No"
     }
   },
-  "Communication Fundamentals (Complete All)": {
+  "Communication Fundamentals": {
     "dcc180": {
       "courseCode": "DCC 180",
       "courseTitle": "Fundamentals of Content Creation",
@@ -99,7 +99,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Communication Core (Complete All)": {
+  "Communication Core": {
     "comm300": {
       "courseCode": "COMM 300",
       "courseTitle": "Communication Career Workshop",
@@ -136,7 +136,7 @@
       "upperDivision": "Yes"
     }
   },
-  "Composition (Complete All)": {
+  "Composition": {
     "eng101": {
       "courseCode": "ENG 101",
       "courseTitle": "Introduction to College Writing",
@@ -152,7 +152,7 @@
       "upperDivision": "No"
     }
   },
-  "Quantitative Literacy (Complete 1)": {
+  "Quantitative Literacy": {
     "math252": {
       "courseCode": "MATH 252",
       "courseTitle": "Statistics",
@@ -163,7 +163,7 @@
       "upperDivision": "No"
     }
   },
-  "American Institutions (Complete All)": {
+  "American Institutions": {
     "pols 110": {
       "courseCode": "POLS 110",
       "courseTitle": "American Government",
@@ -185,7 +185,7 @@
       "upperDivision": "No"
     }
   },
-  "Life Sciences (Complete All)": {
+  "Life Sciences": {
     "ls 103": {
       "courseCode": "LS 103",
       "courseTitle": "Nutrition and Health",
@@ -194,7 +194,7 @@
       "upperDivision": "No"
     }
   },
-  "Physical Science (Complete 1)": {
+  "Physical Science": {
     "geo 111": {
       "courseCode": "GEO 111",
       "courseTitle": "Physical Geology",
@@ -206,7 +206,7 @@
       "upperDivision": "No"
     }
   },
-  "Social Sciences (Complete All)": {
+  "Social Sciences": {
     "econ 161": {
       "courseCode": "ECON 161",
       "courseTitle": "Microeconomics",
@@ -215,7 +215,7 @@
       "upperDivision": "No"
     }
   },
-  "Fine Arts (Complete All)": {
+  "Fine Arts": {
     "art 101": {
       "courseCode": "ART 101",
       "courseTitle": "Survey of Art History",
