@@ -153,8 +153,8 @@
     }
   },
   "Quantitative Literacy": {
-    "math252": {
-      "courseCode": "MATH 252",
+    "math107": {
+      "courseCode": "MATH 107",
       "courseTitle": "Statistics",
       "equivalent": {
         "course1": "MATH 108"
@@ -175,8 +175,8 @@
     }
   },
   "Humanities": {
-    "HUM 110": {
-      "courseCode": "HUM 110",
+    "COMM 122": {
+      "courseCode": "COMM 122",
       "courseTitle": "Foundation of Humanities",
       "equivalent": {
         "course1": "COMM 122"
