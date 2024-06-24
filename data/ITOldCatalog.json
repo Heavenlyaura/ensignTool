@@ -154,9 +154,9 @@
     }
   },
   "American Institutions": {
-    "pols 110": {
-      "courseCode": "POLS 110",
-      "courseTitle": "American Government",
+    "HIST 175": {
+      "courseCode": "HIST 175",
+      "courseTitle": "History of Technology in the United States",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "No"
@@ -174,7 +174,7 @@
   "Life Sciences": {
     "ls 103": {
       "courseCode": "LS 103",
-      "courseTitle": "Nutrition and Health",
+      "courseTitle": "Knowledge of the Physical and Natural World",
       "equivalent": {},
       "credit": "3",
       "upperDivision": "No"
