@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Graduation Review | Ensign Collage</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gradReview.html">Graduation Review</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="gradMain">
+    <h4>Add Uncompleted Courses to complete the analysis</h4>
+    <h4>Legend:</h4>
+    <ul class="legend">
+      <li><span class="certificateCourses">Certificate Courses</span></li>
+      <li><span class="generalEducation">General Education</span></li>
+      <li><span class="capstoneCourses">Capstone Courses</span></li>
+      <li><span class="internshipCourse">Internship Courses</span></li>
+      <li><span class="religionCourses">Religion Courses</span></li>
+    </ul>
+    <div class="notCompleted">
+    </div>
+    <!-- <div class="addCourseSetion">
+      <div class="addCourseInput">
+        <select id="substitution-dropdown">
+          <option value="">Add Upper-Division</option>
+        </select>
+        <input type="text" id="course-code-input" placeholder="Course Code">
+        <input type="text" id="credits-input" placeholder="Credits">
+      </div>
+      <button id="add-course-button">Add Course</button>
+    </div> -->
+    <div class="displayInfo">
+      <h3 class="grad-total"></h3>
+      <h3 class="upper-div"></h3>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="finish">
+      <button id="finish">Finish Analysis</button>
+    </div>
+    <div class="completeAnalysis">
+      <h3 class="credit-saved"></h3>
+    </div>
+  </main>
+  <script src="script/viewSummary.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 export function calculateCompletedCredits(upperDivParam) {
+  console.log('did we arrive')
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
@@ -41,7 +42,7 @@ function getSelectedValue() {
 }
 
 export function updateCompletedCredits(upperDivParam) {
-
+  console.log('event works')
   const oldCatalog = 120
   const newCatalog = 90
   let { totalCredits, upperDivCredit } = calculateCompletedCredits(upperDivParam);
@@ -53,23 +54,30 @@ export function updateCompletedCredits(upperDivParam) {
   const pathway = document.querySelector('#pathway')
   let selectedValue = getSelectedValue()
 
-  let choice = pathway.value
-  if (choice === 'Yes' && selectedValue === "No") {
-    totalCredits += 7
+  if (pathway) {
+    let choice = pathway.value
+    if (choice === 'Yes' && selectedValue === "No") {
+      totalCredits += 7
+    }
+    else if (choice === "Yes" && selectedValue === "Yes") {
+      totalCredits += 15
+    }
   }
-  else if (choice === "Yes" && selectedValue === "Yes") {
-    totalCredits += 15
-  }
+
   const remainingCreditsNew = newCatalog - totalCredits;
   const remainingCreditsOld = oldCatalog - totalCredits
   localStorage.setItem('totalCredit', totalCredits);
   localStorage.setItem('upperDivCredit', upperDivCredit);
 
-  upperDiv.textContent = `Upper Division Credits: ${upperDivCredit}/30`
-  creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;
-  leftOnOld.textContent = `Credits Left On Old Catalog: ${remainingCreditsOld}`;
-  leftOnNew.textContent = `Credits Left On New Catalog: ${remainingCreditsNew}`;
-  creditSaved.textContent = `Credits Saved: ${newCatalog - totalCredits}`;
+  if (upperDiv) {
+    upperDiv.textContent = `Upper Division Credits: ${upperDivCredit}/30`
+    creditsDisplay.textContent = `Total Completed Credits: ${totalCredits}`;
+    if (pathway) {
+      leftOnOld.textContent = `Credits Left On Old Catalog: ${remainingCreditsOld}`;
+      leftOnNew.textContent = `Credits Left On New Catalog: ${remainingCreditsNew}`;
+      creditSaved.textContent = `Credits Saved: ${newCatalog - totalCredits}`;
+    }
+  }
 }
 export function storeNotCompletedCourses() {
   const tableContainer = document.getElementById('table-container');
