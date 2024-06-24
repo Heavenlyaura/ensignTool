@@ -175,8 +175,8 @@
     }
   },
   "Humanities": {
-    "HUM 110": {
-      "courseCode": "HUM 110",
+    "COMM 122": {
+      "courseCode": "COMM 122",
       "courseTitle": "Foundation of Humanities",
       "equivalent": {
         "course1": "COMM 122"
