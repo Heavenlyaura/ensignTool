@@ -5,9 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-main {
-  /* padding: 1rem; */
-}
 body {
   font-family: "Open Sans", Courier, monospace;
   max-width: 1440px;
@@ -73,10 +70,6 @@ form label {
   background-color: #006248;
   color: #fff;
   font-weight: bolder;
-}
-
-.choose {
-  /* padding: 1rem; */
 }
 .degreeOption {
   margin: 1rem 0;
@@ -145,7 +138,8 @@ form label {
   color: white;
   background-color: #006248;
 }
-#next {
+#next,
+.completeReview {
   width: 100px;
   padding: 1rem;
   margin: 0 auto;
@@ -153,7 +147,13 @@ form label {
   border-radius: 1rem;
   background-color: #006248;
   color: #fff;
+  text-align: center;
 }
+
+.completeReview a {
+  color: white;
+}
+
 .div {
   display: flex;
   justify-content: center;
@@ -184,9 +184,6 @@ form label {
   border-radius: 1rem;
   text-align: center;
   margin: 1rem 0;
-}
-.footer-section {
-  /* margin: 1rem; */
 }
 #substitution-dropdown,
 #course-code-input,
@@ -272,6 +269,7 @@ form label {
   display: grid;
   gap: 7px;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 .uncompleteBody {
   margin: 1rem 0;
@@ -358,6 +356,39 @@ caption {
 #gradCourseCode,
 #gradCourseTitle {
   text-align: left;
+}
+.notCompletedReview {
+  width: 80%;
+  margin: 0 auto;
+}
+.detailList {
+  padding: 1.5rem;
+  margin: 1rem;
+}
+.detailList li {
+  padding: .5rem;
+}
+.detailList span {
+  font-weight: bolder;
+}
+#emailArea {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #006248;
+  background-color: #000;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.emailList {
+  padding: .5rem;
+  margin: .7rem;
+}
+.emailList li {
+  padding: .3rem;
 }
 
 @media (max-width: 900px) {
