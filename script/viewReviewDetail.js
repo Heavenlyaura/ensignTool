@@ -1,4 +1,4 @@
-import { detailsComm2022, templateComm2022, templateComm2024, detailComm2024, templateIt2022, detailIt2022 } from "./template2.js"
+import { detailsComm2022, templateComm2022, templateComm2024, detailComm2024, templateIt2022, detailIt2022, templateIt2024, detailIt2024 } from "./template2.js"
 
 document.addEventListener('DOMContentLoaded', () => {
   const catalog = localStorage.getItem('catalog')
@@ -10,19 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const copy = document.querySelector('#copy')
   copy.style.display = 'none'
 
+  let details, template
+
   if (catalog === '2022' && degree === 'communication') {
-    const details = detailsComm2022()
-    const template = templateComm2022()
-    detailAndEmail(details, template)
+    details = detailsComm2022()
+    template = templateComm2022()
   } else if (catalog === '2024' && degree === 'communication') {
-    const details = detailComm2024()
-    const template = templateComm2024()
-    detailAndEmail( details, template)
+    details = detailComm2024()
+    template = templateComm2024()
   } else if (catalog === '2022' && degree === 'information technology') {
-    const details = detailIt2022()
-    const template = templateIt2022()
-    detailAndEmail(details, template)
+    details = detailIt2022()
+    template = templateIt2022()
+  } else if (catalog === '2024' && degree === 'information technology') {
+    details = detailComm2024()
+    template = templateComm2024()
   }
+  detailAndEmail(details, template)
+
   copy.addEventListener('click', copyToClipboard)
 
   function copyToClipboard() {

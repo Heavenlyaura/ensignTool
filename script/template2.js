@@ -65,6 +65,8 @@ function calculateTotalCredits(courses) {
   return 0; // Return 0 if courses is undefined or empty
 }
 
+console.log(countsAndCredits)
+
 
 const generalAssociates = getCourses(associateGenerals, notCompletedCourses)
 const generalAssociatesTotal = calculateTotalCredits(generalAssociates)
@@ -72,20 +74,6 @@ const generalBachelors = getCourses(BachelorGenerals, notCompletedCourses)
 const generalBachelorsTotal = calculateTotalCredits(generalBachelors)
 
 // console.log(getCourses(associateGenerals, notCompletedCourses))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export function templateComm2022() {
   const template = `
     <p>(Day and Date), 2024</p>
@@ -112,7 +100,7 @@ export function templateComm2022() {
       <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
       ${generateListItem('Communication Core', 13, countsAndCredits["Communication Core"].count, 'Certificate 3')}
       ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
-      <li>Bachelor Generals: ${6 - generalBachelorsTotal }/6</li>
+      <li>Bachelor Generals: ${6 - generalBachelorsTotal}/6</li>
       <li>Elective Courses: [Enter Elective Courses]</li>
   </ul>
   <br>
@@ -166,7 +154,7 @@ export function templateComm2024() {
     <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
     ${generateListItem('Communication Core', 15, countsAndCredits["Communication Core"].count, 'Certificate 3')}
     ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
-    <li>Bachelor Generals: ${9 - generalBachelorsTotal }/9</li>
+    <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
     <li>Elective Courses: [Enter Elective Courses]</li>
   </ul>
   <p>We hope this graduation review has been clearly understood.</p>
@@ -185,7 +173,7 @@ export function detailComm2024() {
     <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
     ${generateListItem('Communication Core', 15, countsAndCredits["Communication Core"].count, 'Certificate 3')}
     ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
-    <li>Bachelor Generals: ${9 - generalBachelorsTotal }/9</li>
+    <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
     <li>Elective Courses: [Enter Elective Courses]</li>
   </ul>`
 
@@ -218,7 +206,7 @@ export function templateIt2022() {
     <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
     ${generateListItem('System Administration', 13, countsAndCredits["System Administration"].count, 'Certificate 3')}
     ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
-    <li>Bachelor Generals: ${6 - generalBachelorsTotal }/6</li>
+    <li>Bachelor Generals: ${6 - generalBachelorsTotal}/6</li>
     <li>Elective Courses: [Enter Elective Courses</li>
   </ul>
   <br>
@@ -238,9 +226,60 @@ export function detailIt2022() {
     <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
     ${generateListItem('System Administration', 13, countsAndCredits["System Administration"].count, 'Certificate 3')}
     ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
-    <li>Bachelor Generals: ${6 - generalBachelorsTotal }/6</li>
+    <li>Bachelor Generals: ${6 - generalBachelorsTotal}/6</li>
     <li>Elective Courses: [Enter Elective Courses</li>
   </ul>`
 
   return detail
+}
+
+export function templateIt2024() {
+  const template = `
+  <p>(Day and Date), 2024</p>
+  <br>
+  <p>Dear (Student Name),</p>
+  <br>
+  <p>My name is (Advisor Name) from the BYU-Pathway Worldwide Advising Team. Thanks for contacting us.</p>
+  <br>
+  <p>We understand you have requested a graduation review. The next review has been done using your Degree Audit (Degree and Catalog Year)</p>
+  <br>
+  <p>Requirements</p>
+  <p>GPA: ___/2.0<br>
+  Minimum Total Credits: ${totalCredits}/90<br>
+  In Residency* Credits: ___/30<br>
+  Upper Division** Credits: ${upperDivCredit}/30<br>
+  Minimum Grade: C- <br>
+  <br>
+  <p>*In Residency credits are credits taken directly in Ensign College, online or on-campus.<br>
+  **Upper Division credits are credits with a 300-level or 400-level in the course code.</p>
+  
+  <ul class="emailList">
+    ${generateListItem('Technical Support Engineer', 15, countsAndCredits["Technical Support Engineer"].count, 'Certificate 1')}
+    ${generateListItem('IT Fundamentals', 15, countsAndCredits["IT Fundamentals"].count, 'Certificate 2')}
+    ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
+    <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
+    ${generateListItem('System Administration', 13, countsAndCredits["System Administration"].count, 'Certificate 3')}
+    ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
+    <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
+    <li>Elective Courses: [Enter Elective Courses]</li>
+  </ul>
+  <p>We hope this graduation review has been clearly understood.</p>
+  <p>In conclusion, ___</p>
+  <p>If you have more questions about your graduation requirements please let us know.</p>`
+  return template
+}
+
+export function detailIt2024() {
+  const detail = `<ul class="emailList">
+  ${generateListItem('Technical Support Engineer', 15, countsAndCredits["Technical Support Engineer"].count, 'Certificate 1')}
+  ${generateListItem('IT Fundamentals', 15, countsAndCredits["IT Fundamentals"].count, 'Certificate 2')}
+  ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
+  <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
+  ${generateListItem('System Administration', 13, countsAndCredits["System Administration"].count, 'Certificate 3')}
+  ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
+  <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
+  <li>Elective Courses: [Enter Elective Courses]</li>
+</ul>`
+
+  return detail;
 }
