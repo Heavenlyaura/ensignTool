@@ -1,5 +1,4 @@
 export function calculateCompletedCredits(upperDivParam) {
-  console.log('did we arrive')
   let totalCredits = 0; // Initialize with the provided credit
   const tableContainer = document.getElementById('table-container');
   const selectElements = tableContainer.querySelectorAll('select');
@@ -42,7 +41,6 @@ function getSelectedValue() {
 }
 
 export function updateCompletedCredits(upperDivParam) {
-  console.log('event works')
   const oldCatalog = 120
   const newCatalog = 90
   let { totalCredits, upperDivCredit } = calculateCompletedCredits(upperDivParam);

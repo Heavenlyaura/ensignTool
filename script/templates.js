@@ -27,8 +27,6 @@ function sumVariables(...args) {
 const breadthTotalCredit = sumVariables(AmericanCredit, HumanitiesCredit, PhysicalCredit, lifeCredit, SocialCredits, fineCredits, capstoneCredit, ProfessionalismCredit)
 const breadthTotalCount = sumVariables(AmericanCount, HumanitiesCount, PhysicalCount, lifeCount, SocialCount, fineCount, CapstoneCount, ProfessionalismCredit)
 
-console.log(countsAndCredits)
-
 export function templateComm2022() {
   const template = `
     <p>(Day and Date), 2024</p>

@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const uncompletedDiv = document.querySelector('.notCompleted');
-  console.log(uncompletedDiv)
   const storedCourses = localStorage.getItem('notCompleted')
   const uncompletedCourses = JSON.parse(storedCourses)
   const addedCourseStrList = localStorage.getItem('addedCourseList')
   const addedCourses = JSON.parse(addedCourseStrList)
-  console.log(addedCourses)
   const gradTotal = document.querySelector('.grad-total')
   const upperDiv = document.querySelector('.upper-div')
   const completeAnalysisDiv = document.querySelector('.completeAnalysis')
@@ -27,8 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   completeAnalysisDiv.style.display = 'none'
 
   const displayCourses = uncompletedCourses.filter(course => !addedCourses.includes(course.courseCode))
-
-  console.log(displayCourses)
 
   if (storedCourses) {
     let certificateCourses = [
@@ -109,11 +105,4 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Credits not up to requirement')
     }
   })
-
-
-
-
-
-
-
 })

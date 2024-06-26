@@ -3,7 +3,6 @@ import { detailsComm2022, templateComm2022, templateComm2024, detailComm2024, te
 document.addEventListener('DOMContentLoaded', () => {
   const catalog = localStorage.getItem('catalog')
   const degree = localStorage.getItem('degree')
-  console.log(catalog)
   const gradDetails = document.querySelector('.gradDetails')
   const emailButton = document.querySelector('#viewEmail')
   const emailArea = document.querySelector('#emailArea')
@@ -22,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     details = detailIt2022()
     template = templateIt2022()
   } else if (catalog === '2024' && degree === 'information technology') {
-    details = detailComm2024()
-    template = templateComm2024()
+    details = detailIt2024()
+    template = templateIt2024()
   }
   detailAndEmail(details, template)
 
