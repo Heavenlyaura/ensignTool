@@ -71,19 +71,39 @@ form label {
   color: #fff;
   font-weight: bolder;
 }
-.degreeOption {
+.degreeOption, .degreeButtons {
   margin: 1rem 0;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.degree {
-  padding: 1.5rem;
-  font-size: 1.2rem;
+.degree, .degreeChoice {
+  padding: 1rem;
+  font-size: 1rem;
   background-color: #006248;
   color: white;
   border-radius: 1rem;
   font-weight: bolder;
+  cursor: pointer;
+}
+.degreeReview {
+  text-align: center;
+}
+
+.chooseCatalog {
+  text-align: center;
+  padding: 1rem;
+}
+.catalogYears {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-evenly;
+}
+.catalogYear {
+  padding: .7rem;
+  border-radius: .5rem;
+  background-color: #006248;
+  color: white;
   cursor: pointer;
 }
 
@@ -223,7 +243,7 @@ form label {
   text-align: center;
   font-size: 1.1rem;
 }
-.creditTotal {
+.creditTotal, .ReviewCredits {
   text-align: center;
   position: fixed;
   max-width: 1440px;
@@ -360,6 +380,7 @@ caption {
 .notCompletedReview {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 10rem;
 }
 .detailList {
   padding: 1.5rem;
@@ -389,6 +410,22 @@ caption {
 }
 .emailList li {
   padding: .3rem;
+}
+.topHeading {
+  padding: 1rem;
+}
+.ReviewCredits a {
+  color: #006248;
+}
+.ReviewCredits {
+  font-weight: bolder;
+}
+#viewEmail, #copy {
+  padding: .5rem;
+  border-radius: .3rem;
+  background-color: #006248;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {

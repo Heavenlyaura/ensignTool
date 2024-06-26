@@ -3,9 +3,14 @@ import { createTableFromJson, addCourseToTable } from "./createTable.js";
 import { saveSelectedValues, restoreSelectedValues, saveAddCourseTable } from "./saveRestore.js";
 import { storeNotCompletedCourses } from "./credits.js";
 
-console.log('first')
 document.addEventListener('DOMContentLoaded', () => {
-  // localStorage.clear()
+
+  window.addEventListener('beforeunload', function (e) {
+    var confirmationMessage = 'Are you sure you want to leave? You will lose your progress.';
+    e.returnValue = confirmationMessage;
+    return confirmationMessage;
+});
+  localStorage.clear()
   const degreeChoice = document.querySelectorAll('.degreeChoice');
   const addCourseSetion = document.querySelector('.addCourseSetion');
   const addedCoursesTable = document.querySelector('.add-course-table');
@@ -13,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const catalogYear = document.querySelectorAll('.catalogYear'); // Assuming this is a NodeList
   const completeReview = document.querySelector('.completeReview');
 
-  completeReview.addEventListener('click', ()=> {
+  completeReview.addEventListener('click', () => {
     storeNotCompletedCourses()
     saveAddCourseTable()
   })
@@ -41,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   };
-  
+
   degreeChoice.forEach(degree => {
     degree.addEventListener('click', () => {
       chooseCatalog.style.display = 'block';
