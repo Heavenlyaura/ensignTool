@@ -427,6 +427,9 @@ caption {
   color: #fff;
   cursor: pointer;
 }
+.certificateCourses {
+  color: #006248;
+}
 
 @media (max-width: 900px) {
   .main {
