@@ -28,21 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (storedCourses) {
     let certificateCourses = [
-      'Social Media Marketing (Complete All)',
-      'Communication Fundamentals (Complete All)',
-      'Communication Core (Complete All)',
-      'Technical Support Engineer (Complete All)',
-      'IT Fundamentals (Complete All)',
-      'System Administration (Complete All)'
+      'Social Media Marketing',
+      'Communication Fundamentals',
+      'Communication Core',
+      'Technical Support Engineer',
+      'IT Fundamentals',
+      'System Administration'
     ];
     let religionCourses = [
-      'Religion (Complete All)'
+      'Religion'
     ]
     let capstoneCourses = [
-      'Capstone (Complete All)'
+      ''
     ]
     let internshipCourse = [
-      'Internship (Complete All)'
+      'Internship'
     ]
 
 
