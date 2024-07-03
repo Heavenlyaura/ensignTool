@@ -5,12 +5,12 @@ import { storeNotCompletedCourses } from "./credits.js";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  window.addEventListener('beforeunload', function (e) {
-    var confirmationMessage = 'Are you sure you want to leave? You will lose your progress.';
-    e.returnValue = confirmationMessage;
-    return confirmationMessage;
-});
-  localStorage.clear()
+  // window.addEventListener('beforeunload', function (e) {
+  //   var confirmationMessage = 'Are you sure you want to leave? You will lose your progress.';
+  //   e.returnValue = confirmationMessage;
+  //   return confirmationMessage;
+  // });
+  // localStorage.clear()
   const degreeChoice = document.querySelectorAll('.degreeChoice');
   const addCourseSetion = document.querySelector('.addCourseSetion');
   const addedCoursesTable = document.querySelector('.add-course-table');

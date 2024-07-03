@@ -326,11 +326,14 @@ form label {
 }
 .finish {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* text-align: center; */
+  margin: 1rem auto;
 }
 #finish {
+  width: fit-content;
   cursor: pointer;
-  margin-bottom: 5rem;
+  margin: 1rem auto;
   padding: 1rem;
   border-radius: 1rem;
   background-color: #006248;

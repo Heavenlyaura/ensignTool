@@ -4,12 +4,12 @@ import { storeNotCompletedCourses, updateCompletedCredits } from "./credits.js";
 import { saveSelectedValues, restoreSelectedValues, saveAddCourseTable } from "./saveRestore.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('beforeunload', function (e) {
-    var confirmationMessage = 'Are you sure you want to leave? You will lose your progress.';
-    e.returnValue = confirmationMessage;
-    return confirmationMessage;
-  });
-  localStorage.clear();
+  // window.addEventListener('beforeunload', function (e) {
+  //   var confirmationMessage = 'Are you sure you want to leave? You will lose your progress.';
+  //   e.returnValue = confirmationMessage;
+  //   return confirmationMessage;
+  // });
+  // localStorage.clear();
   const degreeOptions = document.querySelectorAll('.degree')
   const next = document.querySelector('#next')
   const footerSection = document.querySelector('.footer-section')

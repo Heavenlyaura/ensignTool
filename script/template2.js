@@ -264,6 +264,7 @@ export function detailIt2024() {
   ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
   <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
 </ul>`
-
   return detail;
 }
+
+ 
