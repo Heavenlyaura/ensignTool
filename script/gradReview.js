@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   e.returnValue = confirmationMessage;
   //   return confirmationMessage;
   // });
-  // localStorage.clear()
+  localStorage.clear()
   const degreeChoice = document.querySelectorAll('.degreeChoice');
   const addCourseSetion = document.querySelector('.addCourseSetion');
   const addedCoursesTable = document.querySelector('.add-course-table');

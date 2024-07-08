@@ -1,3 +1,6 @@
+import { storeCreditAndCount } from "./creditAndCount.js";
+import {degreeAnalysis} from './template2.js'
+
 document.addEventListener("DOMContentLoaded", () => {
   function finishInformation(qs) {
     const template = `<p>*Disclaimer: Estimates are based on currently available information about the 3-year degrees. Do not guarantee the accuracy of estimates and ensure students know that details may change as curricilum is updated.</p>`;
@@ -41,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "System Administration",
     ];
     let religionCourses = ["Religion"];
-    let capstoneCourses = [""];
+    let capstoneCourses = ["Capstone"];
     let internshipCourse = ["Internship"];
 
     let uncompleted = `
@@ -88,7 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   finish.addEventListener("click", () => {
+
     if (!(totalCredits < 90) && !(upperDivCredit < 30)) {
+      storeCreditAndCount()
       completeAnalysisDiv.style.display = "block";
       let creditSaved = oldDegree - totalCredits;
       if (totalCredits > 120) {
@@ -96,6 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
         creditSavedh3.textContent = `CREDIT LOST: ${creditSaved}`;
       } else {
         creditSavedh3.textContent = `CREDIT SAVED: ${creditSaved}`;
+        const viewEmail = document.createElement('button')
+        localStorage.setItem('creditSaved', creditSaved)
       }
       const finishDiv = document.querySelector(".finish");
       console.log(finishDiv);

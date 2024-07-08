@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   e.returnValue = confirmationMessage;
   //   return confirmationMessage;
   // });
-  // localStorage.clear();
+  localStorage.clear();
   const degreeOptions = document.querySelectorAll('.degree')
   const next = document.querySelector('#next')
   const footerSection = document.querySelector('.footer-section')
