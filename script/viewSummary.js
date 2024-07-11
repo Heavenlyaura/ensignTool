@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let totalCredits = parseInt(localStorage.getItem("totalCredit"));
   let upperDivCredit = parseInt(localStorage.getItem("upperDivCredit"));
 
-  if (isNaN(totalCredits)) {
+  if (isNaN(totalCredits)) { 
     totalCredits = 0;
   }
   if (isNaN(upperDivCredit)) {
