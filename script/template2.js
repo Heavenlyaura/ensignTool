@@ -91,7 +91,7 @@ export function templateComm2022() {
     **Upper Division credits are credits with a 300-level or 400-level in the course code.</p>
     <br>
     <ul class="emailList">
-      ${generateListItem('Social Media Marketing', 16, countsAndCredits["Social Media Marketing"].count, 'Certificate 1')}
+      ${generateListItem('Social Media Marketing', 16, countsAndCredits["Social Media Marketing"].count, '1st Cretificate')}
       ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, 'Certificate 2')}
       ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
       <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>

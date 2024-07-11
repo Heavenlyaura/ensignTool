@@ -1,5 +1,4 @@
 import { storeCreditAndCount } from "./creditAndCount.js";
-import {degreeAnalysis} from './template2.js'
 
 document.addEventListener("DOMContentLoaded", () => {
   function finishInformation(qs) {
