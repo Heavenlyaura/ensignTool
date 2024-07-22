@@ -92,10 +92,10 @@ export function templateComm2022() {
     <br>
     <ul class="emailList">
       ${generateListItem('Social Media Marketing', 16, countsAndCredits["Social Media Marketing"].count, '1st Cretificate')}
-      ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, 'Certificate 2')}
+      ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, '2nd Certificate')}
       ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
       <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
-      ${generateListItem('Communication Core', 13, countsAndCredits["Communication Core"].count, 'Certificate 3')}
+      ${generateListItem('Communication Core', 13, countsAndCredits["Communication Core"].count, '3rd Certificate')}
       ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
       <li>Bachelor Generals: ${6 - generalBachelorsTotal}/6</li>
   </ul>
@@ -109,9 +109,9 @@ export function templateComm2022() {
 export function detailsComm2022() {
   const detail = `
   <ul class="detailList">
-  ${generateListItem('Social Media Marketing', 16, countsAndCredits["Social Media Marketing"].count, 'Certificate 1')}
-  ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, 'Certificate 2')}
-  ${generateListItem('Communication Core', 13, countsAndCredits["Communication Core"].count, 'Certificate 3')}
+  ${generateListItem('Social Media Marketing', 16, countsAndCredits["Social Media Marketing"].count, '1st Certificate')}
+  ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, '2nd Certificate')}
+  ${generateListItem('Communication Core', 13, countsAndCredits["Communication Core"].count, '3rd Certificate')}
   ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
   ${generateListItem('Composition', 6, countsAndCredits['Composition'].count, 'Composition')}
   ${generateListItem('Quantitative Literacy', 3, countsAndCredits['Quantitative Literacy'].count, 'Quantitative Literacy')}
@@ -142,11 +142,11 @@ export function templateComm2024() {
   **Upper Division credits are credits with a 300-level or 400-level in the course code.</p>
   
   <ul class="emailList">
-    ${generateListItem('Social Media Marketing', 15, countsAndCredits["Social Media Marketing"].count, 'Certificate 1')}
-    ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, 'Certificate 2')}
+    ${generateListItem('Social Media Marketing', 15, countsAndCredits["Social Media Marketing"].count, '1st Certificate')}
+    ${generateListItem('Communication Fundamentals', 15, countsAndCredits["Communication Fundamentals"].count, '2nd Certificate')}
     ${generateListItem('Religion', 14, countsAndCredits['Religion'].count, 'Religion')}
     <li>Associate Generals: ${14 - generalAssociatesTotal}/14</li>
-    ${generateListItem('Communication Core', 15, countsAndCredits["Communication Core"].count, 'Certificate 3')}
+    ${generateListItem('Communication Core', 15, countsAndCredits["Communication Core"].count, '3rd Certificate')}
     ${generateListItem('Internship', 3, countsAndCredits['Internship'], 'Internship')}
     <li>Bachelor Generals: ${9 - generalBachelorsTotal}/9</li>
     <li>Elective Courses: [Enter Elective Courses]</li>
