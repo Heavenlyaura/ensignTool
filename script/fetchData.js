@@ -13,22 +13,22 @@ async function fetchData(url) {
 }
 async function getCommOld() {
   // let api = 'https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/commOldCatalog.json';
-  let api = '/data/commOldCatalog.json';
+  let api = './data/commOldCatalog.json';
   return await fetchData(api);
 }
 async function getCommNew() {
   // let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/commNewCatalog.json";
-  let api = '/data/commNewCatalog.json';
+  let api = './data/commNewCatalog.json';
   return await fetchData(api);
 }
 async function getItOld() {
   // let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/ITOldCatalog.json";
-  let api = '/data/ITOldCatalog.json';
+  let api = './data/ITOldCatalog.json';
   return await fetchData(api);
 }
 async function getItNew() {
   // let api = "https://raw.githubusercontent.com/Heavenlyaura/ensignTool/main/data/iTNewCatalog.json";
-  let api = '/data/ITOldCatalog.json';
+  let api = './data/ITOldCatalog.json';
 
   return await fetchData(api);
 }
